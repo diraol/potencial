@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -34,6 +34,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+
   </head>
 
 <body>
@@ -122,30 +123,20 @@
             </div> <!-- span10 offset1 -->
         </article> <!-- fotos -->
       <hr id="linha-filtro">
-        <article id="graficos" class="row-fluid">
+        <article id="graficos" class="row-fluid accordion">
             <div id="barraFiltros" class="btn-group">
-                <button type="button" class="btn btn-small"><a href="#tab-regiao" data-toggle="tab">Região</a></button>
-                <button type="button" class="btn btn-small"><a href="#tab-sexo" data-toggle="tab">Sexo</a></li>
-                <button type="button" class="btn btn-small"><a href="#tab-escol" data-toggle="tab">Escolaridade</a></button>
-                <button type="button" class="btn btn-small"><a href="#tab-classe" data-toggle="tab">Classe de Consumo</a></button>
-                <button type="button" class="btn btn-small"><a href="#tab-renda" data-toggle="tab">Renda (SM)</a></button>
+                <button type="button" class="btn btn-small collapsed" data-toggle="collapse" data-parent="#graficos" data-target="#tab-regiao">Região</button>
+                <button type="button" class="btn btn-small collapsed" data-toggle="collapse" data-parent="#graficos" data-target="#tab-sexo">Sexo</button>
+                <button type="button" class="btn btn-small collapsed" data-toggle="collapse" data-parent="#graficos" data-target="#tab-escol">Escolaridade</button>
+                <button type="button" class="btn btn-small collapsed" data-toggle="collapse" data-parent="#graficos" data-target="#tab-classe">Classe de Consumo</button>
+                <button type="button" class="btn btn-small collapsed" data-toggle="collapse" data-parent="#graficos" data-target="#tab-renda">Renda (SM)</button>
             </div>
-            <!--
-            <div id="barraFiltros" class="tabbable tabs-left">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab-regiao" data-toggle="tab">Região</a></li>
-                    <li><a href="#tab-sexo" data-toggle="tab">Sexo</a></li>
-                    <li><a href="#tab-escol" data-toggle="tab">Escolaridade</a></li>
-                    <li><a href="#tab-classe" data-toggle="tab">Classe de Consumo</a></li>
-                </ul>
-            </div>
-            -->
-            <div class="span12 tab-content" id="caixaFiltro">
-                <div class="tab-pane active" id="tab-regiao">Tab Região</div>
-                <div class="tab-pane" id="tab-sexo">Tab Sexo</div>
-                <div class="tab-pane" id="tab-escol">Tab Escolaridade</div>
-                <div class="tab-pane" id="tab-classe">Tab Classe Consumo</div>
-                <div class="tab-pane" id="tab-renda">Tab Renda</div>
+            <div class="span12" id="caixaFiltro">
+                <div class="accordion-body collapse width" id="tab-regiao">Tab Região</div>
+                <div class="accordion-body collapse width" id="tab-sexo">Tab Sexo</div>
+                <div class="accordion-body collapse width" id="tab-escol">Tab Escolaridade</div>
+                <div class="accordion-body collapse width" id="tab-classe">Tab Classe Consumo</div>
+                <div class="accordion-body collapse width" id="tab-renda">Tab Renda</div>
             </div>
         </article>
     </section>
