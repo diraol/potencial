@@ -1,4 +1,9 @@
 /* Barra de navegação superior */
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
 a.brand img {
     height: 30px;
 }
@@ -87,3 +92,51 @@ a.brand img {
     background: linear-gradient(to right, rgba(170,170,170,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6aaaaaa', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 }
+
+#fotos .thumbnails img {
+    height: 65px;
+    width: 65px;
+}
+
+#fotos h4 {
+    margin-top: 2px;
+}
+
+#comparativo div.row div {
+    /* height: 643px; */
+    height: 140px;
+}
+
+#versus {
+    padding-left: 30px;
+}
+
+#versus p {
+    font-size: 6em;
+}
+
+.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+
+#thumbnails span {
+    position: absolute;
+}
+
+.droppable {
+    list-style: none;
+}
+
+.draggable {
+    cursor: move;
+}
+
+.placeholder:before {
+    line-height: 135px;
+    color: rgba(30,30,30,0.3);
+    font-size: 0.9em;
+    content: "Selecione uma opção ao lado e arraste até esta área";
+}
+
+/* JqueryUI - Draggable - Droppable 
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+#sortable li span { position: absolute; margin-left: -1.3em; }*/
