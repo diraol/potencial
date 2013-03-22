@@ -4,6 +4,10 @@ body {
     padding-bottom: 40px;
 }
 
+.well {
+    background-color: rgb(250,251,255);
+}
+
 .titulo-header {
     padding-bottom: 0;
     padding-top: 10px;
@@ -24,15 +28,15 @@ a.brand img {
 
 /* Barra de fotos */
 #fotos {
-    margin-top:16px;
 }
+
 #fotos li.span2, #fotos li.span2 p {
     margin-bottom: 2px;
 }
 
 #fotos .thumbnails li {
     margin-left: 0px;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 }
 
 #fotos span {
@@ -46,6 +50,10 @@ a.brand img {
 .titulo-header {
     margin-left: 0;
     margin-right: 0;
+}
+
+.titulo-header h3 {
+    line-height: 26px;
 }
 
 #comparativo div.row div {
@@ -65,8 +73,8 @@ a.brand img {
     line-height: 78px;
 }
 
-.nomepol {
-
+#fotos .nomepol {
+    display: none;
 }
 
 #fotos img, #confrontantes img {
@@ -98,5 +106,5 @@ a.brand img {
     line-height: 60px;
     color: rgba(30,30,30,0.3);
     font-size: 0.9em;
-    content: "Selecione uma opção ao lado e arraste até esta área";
+    content: "Arreste uma das fotos dos candidatos para esta área";
 }

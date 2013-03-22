@@ -32,9 +32,11 @@ $(function() {
     $("#sortable").sortable();
     $("#sortable").disableSelection();
     $(".draggable").draggable({
-        appendTo: 'body',
+        scroll: true,
         revert: "valid",
-        cursor: 'move'
+        snap: true,
+        cursor: "move"
+
     });
     $(".droppable").droppable({
         accept: '.draggable',
@@ -53,8 +55,8 @@ function geraGraficoCircular(tabela, container, nome) {
     // Parse the data from an inline table using the Highcharts Data plugin
     var graf = Highcharts.data({
     	table: tabela,
-    	startRow: 1,
-    	endRow: 6,
+    	startRow: 0,
+    	endRow: 5,
     	endColumn: 5,
     	
     	complete: function (options) {
@@ -64,7 +66,7 @@ function geraGraficoCircular(tabela, container, nome) {
     			
     		// Create the chart
     		window.chart = new Highcharts.Chart(Highcharts.merge(options, {
-		        colors: ["#C2C7D1", "#AD0303", "#4E7ACC", "#0727A6"],
+		        colors: ["#EDC511", "#C9040E", "#99D3E0", "#000961"],
 			    chart: {
 			        renderTo: container,
 			        polar: true,
@@ -124,7 +126,8 @@ function geraGraficoCircular(tabela, container, nome) {
 			        	stacking: 'normal',
 			        	shadow: true,
 			        	groupPadding: 0,
-			        	pointPlacement: 'on'
+			        	pointPlacement: 'on',
+                        borderColor: "#D4D4D4"
 			        }
 			    }
 			}));

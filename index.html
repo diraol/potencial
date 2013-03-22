@@ -63,6 +63,11 @@
                 </div>
             </div>
         </nav> <!-- Fim da barra de navegação do Estadão Dados -->
+        <!-- Cabeçalho -->
+        <div class="row-fluid text-center well titulo-header">
+            <h3>Arraste os pré-candidatos para o ringue de 2014</h3>
+            <h4>Potencial de voto de cada um dos presidenciáveis, segundo o Ibope</h4>
+        </div>
     </header>
 
     <!-- Conteúdo Principal -->
@@ -72,53 +77,49 @@
                 <ul class="thumbnails" id="sortable">
                     <li class="span12 text-center draggable">
                         <span id="dilma">
+                            <span class="nomepol text-center">Dilma Roussef</span>
                             <img alt="Dilma Roussef" src="imgs/dilma.jpg" class="img-rounded"/>
-                            <span class="text-center">Dilma Roussef</span>
                         </span>
                     </li>
                     <li class="span12 text-center draggable">
                         <span id="marina">
-                            <img alt="Marina Silva" src="imgs/marina.jpg" class="img-rounded"/>
                             <span class="nomepol text-center">Marina Silva</span>
+                            <img alt="Marina Silva" src="imgs/marina.jpg" class="img-rounded"/>
                         </span>
                     </li>
                     <li class="span12 text-center draggable">
                         <span id="serra">
-                            <img alt="José Serra" src="imgs/serra.jpg" class="img-rounded"/>
                             <span class="nomepol text-center">José Serra</span>
+                            <img alt="José Serra" src="imgs/serra.jpg" class="img-rounded"/>
                         </span>
                     </li>
                     <li class="span12 text-center draggable">
                         <span id="aecio">
-                            <img alt="Aécio Neves" src="imgs/aecio.jpg" class="img-rounded"/>
                             <span class="nomepol text-center">Aécio Neves</span>
+                            <img alt="Aécio Neves" src="imgs/aecio.jpg" class="img-rounded"/>
                         </span>
                     </li>
                     <li class="span12 text-center draggable">
                         <span id="joaquim">
-                            <img alt="Joaquim Barbosa" src="imgs/joaquim.jpg" class="img-rounded"/>
                             <span class="nomepol text-center">Joaquim Barbosa</span>
+                            <img alt="Joaquim Barbosa" src="imgs/joaquim.jpg" class="img-rounded"/>
                         </span>
                     </li>
                     <li class="span12 text-center draggable">
                         <span id="eduardo">
-                                <img alt="Eduardo Campos" src="imgs/campos.jpg" class="img-rounded"/>
                             <span class="nomepol text-center">Eduardo Campos</span>
+                            <img alt="Eduardo Campos" src="imgs/campos.jpg" class="img-rounded"/>
                         </span>
                     </li>
                     <li class="span12 text-center draggable">
-                        <span id="gabeira">
-                            <img alt="Fernando Gabeira" src="imgs/gabeira.jpg" class="img-rounded"/>
+                        <span id="gabeira"alt="Fernando Gabeira" title="Fernando Gabeira"  >
                             <span class="nomepol text-center">Fernando Gabeira</span>
+                            <img title="Fernando Gabeira" alt="Fernando Gabeira" src="imgs/gabeira.jpg" class="img-rounded"/>
                         </span>
                     </li>
                 </ul>
             </aside> <!-- fotos -->
             <article class="span11" id="comparativo">
-                <!-- Cabeçalho -->
-                <div class="row-fluid text-center well titulo-header">
-                    <h1>Eleições 2014 - Potencial de Voto</h1>
-                </div>
                 <!-- confrontantes -->
                 <div class="row-fluid" id="confrontantes">
                     <div class="span4 offset1 well text-center droppable placeholder" id="cand-esq"></div>
@@ -139,99 +140,288 @@
       <footer>
         <p>© Company 2013</p>
       </footer>
-    <!-- dados -->
-<!-- serra -->
-<div style="display:none">
-	<!-- Source: http://or.water.usgs.gov/cgi-bin/grapher/graph_windrose.pl -->
-	<table id="freq-serra" border="0" cellspacing="0" cellpadding="0">
-		<tr nowrap bgcolor="#CCCCFF">
-			<th colspan="5" class="hdr">Table of Frequencies (percent)</th>
-		</tr>
-		<tr nowrap bgcolor="#CCCCFF">
-            <th class="freq">Opção</th>
-            <th class="freq">Votaria com certeza</span></th>
-			<th class="freq">Talvez votaria</th>
-			<th class="freq">Não votaria com certeza</th>
-			<th class="freq">Não conheço</th>
-		</tr>
-		<tr nowrap>
-            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
-			<td class="data">41</td>
-			<td class="data">0</td>
-			<td class="data">0</td>
-			<td class="data">0.00</td>
-		</tr>		
-		<tr nowrap>
-			<td class="dir">Talvez votaria</td>
-			<td class="data">0</td>
-			<td class="data">20</td>
-			<td class="data">0</td>
-			<td class="data">0.00</td>
-		</tr>
-
-		<tr nowrap>
-            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria com certeza</span></td>
-			<td class="data">0</td>
-			<td class="data">0</td>
-			<td class="data">32</td>
-			<td class="data">0.00</td>
-		</tr>
-		<tr nowrap>
-			<td class="dir">Não conheço</td>
-			<td class="data">0</td>
-			<td class="data">0</td>
-			<td class="data">0</td>
-			<td class="data">6</td>
-		</tr>
-	</table>
-</div>
-
+  
+<!-- dados para o Gráfico de Radar -->
 <!-- dilma -->
 <div style="display:none">
-	<!-- Source: http://or.water.usgs.gov/cgi-bin/grapher/graph_windrose.pl -->
-	<table id="freq-dilma" border="0" cellspacing="0" cellpadding="0">
-		<tr nowrap bgcolor="#CCCCFF">
-			<th colspan="5" class="hdr">Table of Frequencies (percent)</th>
-		</tr>
-		<tr nowrap bgcolor="#CCCCFF">
+	<table id="freq-dilma">
+		<tr>
             <th class="freq">Opção</th>
             <th class="freq">Votaria com certeza</span></th>
-			<th class="freq">Talvez votaria</th>
-			<th class="freq">Não votaria com certeza</th>
-			<th class="freq">Não conheço</th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
 		</tr>
-		<tr nowrap>
+		<tr>
             <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
-			<td class="data">35</td>
+			<td class="data">52</td>
 			<td class="data">0</td>
 			<td class="data">0</td>
 			<td class="data">0</td>
 		</tr>		
-		<tr nowrap>
-			<td class="dir">Talvez votaria</td>
+		<tr>
+			<td class="dir">Poderia votar</td>
 			<td class="data">0</td>
-			<td class="data">17</td>
+			<td class="data">24</td>
 			<td class="data">0</td>
 			<td class="data">0</td>
 		</tr>
-
-		<tr nowrap>
-            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria com certeza</span></td>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
 			<td class="data">0</td>
 			<td class="data">0</td>
-			<td class="data">34</td>
+            <td class="data">20</td>
 			<td class="data">0</td>
 		</tr>
-		<tr nowrap>
-			<td class="dir">Não conheço</td>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
 			<td class="data">0</td>
 			<td class="data">0</td>
 			<td class="data">0</td>
-			<td class="data">15</td>
+			<td class="data">4</td>
 		</tr>
 	</table>
 </div>
-
+<!-- Marina -->
+<div style="display:none">
+	<table id="freq-marina">
+		<tr>
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">10</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr>
+			<td class="dir">Poderia votar</td>
+			<td class="data">0</td>
+			<td class="data">30</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+            <td class="data">40</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">20</td>
+		</tr>
+	</table>
+</div>
+<!-- serra -->
+<div style="display:none">
+	<table id="freq-serra">
+		<tr>
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">10</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr>
+			<td class="dir">Poderia votar</td>
+			<td class="data">0</td>
+			<td class="data">25</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">50</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">14</td>
+		</tr>
+	</table>
+</div>
+<!-- aecio -->
+<div style="display:none">
+	<table id="freq-aecio">
+		<tr>
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">7</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr>
+			<td class="dir">Poderia votar</td>
+			<td class="data">0</td>
+			<td class="data">18</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+            <td class="data">36</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">39</td>
+		</tr>
+	</table>
+</div>
+<!-- joaquim -->
+<div style="display:none">
+	<table id="freq-joaquim">
+		<tr>
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">4</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr>
+			<td class="dir">Poderia votar</td>
+			<td class="data">0</td>
+			<td class="data">13</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+            <td class="data">34</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">48</td>
+		</tr>
+	</table>
+</div>
+<!-- campos -->
+<div style="display:none">
+	<table id="freq-eduardo">
+		<tr>
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">2</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr>
+			<td class="dir">Poderia votar</td>
+			<td class="data">0</td>
+			<td class="data">8</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+            <td class="data">35</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">54</td>
+		</tr>
+	</table>
+</div>
+<!-- gabeira -->
+<div style="display:none">
+	<table id="freq-gabeira">
+		<tr>
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Poderia votar</th>
+			<th class="freq">Não votaria de jeito nenhum</th>
+			<th class="freq">Não conhece ou não sabe</th>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">1</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr>
+			<td class="dir">Poderia votar</td>
+			<td class="data">0</td>
+			<td class="data">6</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria de jeito nenhum</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+            <td class="data">42</td>
+			<td class="data">0</td>
+		</tr>
+		<tr>
+			<td class="dir">Não conhece ou não sabe</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">51</td>
+		</tr>
+	</table>
+</div>
 
     <!-- Le javascript
     ================================================== -->
@@ -245,7 +435,6 @@
     <script src="js/data.js"></script>
     <script src="js/exporting.js"></script>
     <script src="js/estadaodados.js"></script>
-    <script src="js/estadaodados.highcharts.js"></script>
 
 </body>
 </html>
