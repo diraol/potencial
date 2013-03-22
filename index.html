@@ -63,57 +63,72 @@
                 </div>
             </div>
         </nav> <!-- Fim da barra de navegação do Estadão Dados -->
-        <!-- Cabeçalho -->
-        <div class="text-center well">
-            <p></p>
-            <h1>Eleições 2014 - Potencial de Voto</h1>
-        </div>
     </header>
 
     <!-- Conteúdo Principal -->
     <section id="main-content">
-        <div class="row">
-            <aside id="fotos" class="span2">
+        <div class="row-fluid">
+            <aside id="fotos" class="span1">
                 <ul class="thumbnails" id="sortable">
-                    <li class="span2 text-center draggable"><span id="dilma">
-                        <img data-src="holder.js/200x100" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 1</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="dilma">
+                            <img alt="Dilma Roussef" src="imgs/dilma.jpg" class="img-rounded"/>
+                            <span class="text-center">Dilma Roussef</span>
+                        </span>
                     </li>
-                    <li class="span2 text-center draggable"><span id="serra">
-                        <img data-src="holder.js/100x200" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 2</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="marina">
+                            <img alt="Marina Silva" src="imgs/marina.jpg" class="img-rounded"/>
+                            <span class="nomepol text-center">Marina Silva</span>
+                        </span>
                     </li>
-                    <li class="span2 text-center draggable"><span id="aecio">
-                        <img data-src="holder.js/300x100" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 3</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="serra">
+                            <img alt="José Serra" src="imgs/serra.jpg" class="img-rounded"/>
+                            <span class="nomepol text-center">José Serra</span>
+                        </span>
                     </li>
-                    <li class="span2 text-center draggable"><span>
-                        <img data-src="holder.js/100x300" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 4</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="aecio">
+                            <img alt="Aécio Neves" src="imgs/aecio.jpg" class="img-rounded"/>
+                            <span class="nomepol text-center">Aécio Neves</span>
+                        </span>
                     </li>
-                    <li class="span2 text-center draggable"><span>
-                        <img data-src="holder.js/100x100" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 5</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="joaquim">
+                            <img alt="Joaquim Barbosa" src="imgs/joaquim.jpg" class="img-rounded"/>
+                            <span class="nomepol text-center">Joaquim Barbosa</span>
+                        </span>
                     </li>
-                    <li class="span2 text-center draggable"><span>
-                        <img data-src="holder.js/100x100" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 6</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="eduardo">
+                                <img alt="Eduardo Campos" src="imgs/campos.jpg" class="img-rounded"/>
+                            <span class="nomepol text-center">Eduardo Campos</span>
+                        </span>
                     </li>
-                    <li class="span2 text-center draggable"><span>
-                        <img data-src="holder.js/100x100" alt="teste 1" src="imgs/teste.png" class="img-rounded"/>
-                        <h4 class="text-center">Teste 7</h3></span>
+                    <li class="span12 text-center draggable">
+                        <span id="gabeira">
+                            <img alt="Fernando Gabeira" src="imgs/gabeira.jpg" class="img-rounded"/>
+                            <span class="nomepol text-center">Fernando Gabeira</span>
+                        </span>
                     </li>
                 </ul>
             </aside> <!-- fotos -->
-            <article class="span10" id="comparativo">
-                <div class="row">
-                    <div class="span4 well text-center droppable placeholder" id="cand-esq"></div>
-                    <div class="span1">
-                        <div class="row span1" style="height:75px;"></div>
-                        <div class="row" id="versus"><p class="text-center">X</p></div>
-                        <div class="row span1" style="height:75px;"></div>
-                    </div>
+            <article class="span11" id="comparativo">
+                <!-- Cabeçalho -->
+                <div class="row-fluid text-center well titulo-header">
+                    <h1>Eleições 2014 - Potencial de Voto</h1>
+                </div>
+                <!-- confrontantes -->
+                <div class="row-fluid" id="confrontantes">
+                    <div class="span4 offset1 well text-center droppable placeholder" id="cand-esq"></div>
+                    <div class="span2 text-center" id="versus">X</div>
                     <div class="span4 well text-center droppable placeholder" id="cand-dir"></div>
+                </div>
+                <!-- graficos -->
+                <div class="row-fluid" id="graficos">
+                    <div class="span6 well text-center graf-container" id="graf-cand-esq"></div>
+                    <div class="span6 well text-center graf-container" id="graf-cand-dir"></div>
                 </div>
             </article>
         </div>
@@ -124,6 +139,99 @@
       <footer>
         <p>© Company 2013</p>
       </footer>
+    <!-- dados -->
+<!-- serra -->
+<div style="display:none">
+	<!-- Source: http://or.water.usgs.gov/cgi-bin/grapher/graph_windrose.pl -->
+	<table id="freq-serra" border="0" cellspacing="0" cellpadding="0">
+		<tr nowrap bgcolor="#CCCCFF">
+			<th colspan="5" class="hdr">Table of Frequencies (percent)</th>
+		</tr>
+		<tr nowrap bgcolor="#CCCCFF">
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Talvez votaria</th>
+			<th class="freq">Não votaria com certeza</th>
+			<th class="freq">Não conheço</th>
+		</tr>
+		<tr nowrap>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">41</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0.00</td>
+		</tr>		
+		<tr nowrap>
+			<td class="dir">Talvez votaria</td>
+			<td class="data">0</td>
+			<td class="data">20</td>
+			<td class="data">0</td>
+			<td class="data">0.00</td>
+		</tr>
+
+		<tr nowrap>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria com certeza</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">32</td>
+			<td class="data">0.00</td>
+		</tr>
+		<tr nowrap>
+			<td class="dir">Não conheço</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">6</td>
+		</tr>
+	</table>
+</div>
+
+<!-- dilma -->
+<div style="display:none">
+	<!-- Source: http://or.water.usgs.gov/cgi-bin/grapher/graph_windrose.pl -->
+	<table id="freq-dilma" border="0" cellspacing="0" cellpadding="0">
+		<tr nowrap bgcolor="#CCCCFF">
+			<th colspan="5" class="hdr">Table of Frequencies (percent)</th>
+		</tr>
+		<tr nowrap bgcolor="#CCCCFF">
+            <th class="freq">Opção</th>
+            <th class="freq">Votaria com certeza</span></th>
+			<th class="freq">Talvez votaria</th>
+			<th class="freq">Não votaria com certeza</th>
+			<th class="freq">Não conheço</th>
+		</tr>
+		<tr nowrap>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Votaria com certeza</span> &nbsp; </td>
+			<td class="data">35</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>		
+		<tr nowrap>
+			<td class="dir">Talvez votaria</td>
+			<td class="data">0</td>
+			<td class="data">17</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+		</tr>
+
+		<tr nowrap>
+            <td class="dir"><span style="white-space: nowrap; margin-left:-30px;">Não votaria com certeza</span></td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">34</td>
+			<td class="data">0</td>
+		</tr>
+		<tr nowrap>
+			<td class="dir">Não conheço</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">0</td>
+			<td class="data">15</td>
+		</tr>
+	</table>
+</div>
+
 
     <!-- Le javascript
     ================================================== -->
@@ -137,5 +245,7 @@
     <script src="js/data.js"></script>
     <script src="js/exporting.js"></script>
     <script src="js/estadaodados.js"></script>
+    <script src="js/estadaodados.highcharts.js"></script>
 
-</body></html>
+</body>
+</html>
