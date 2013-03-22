@@ -68,6 +68,11 @@ a.brand img {
     height: 320px;
 }
 
+#tabelas-de-dados span {
+    white-space: nowrap;
+    margin-left: -30px;
+}
+
 #versus {
     font-size: 4em;
     line-height: 78px;
@@ -107,4 +112,25 @@ a.brand img {
     color: rgba(30,30,30,0.3);
     font-size: 0.9em;
     content: "Arreste uma das fotos dos candidatos para esta área";
+}
+
+#leia_tambem {
+    font-size: 0.9em;
+    color: #404040;
+}
+
+#leia_tambem h1 {
+    font-weight: bold;
+}
+
+
+footer {
+	font-size: 0.8em;
+	color: #666;
+	height: 10px;
+	padding: 10px 0;
+    margin-top: 15px;
+	border-top: 1px #666 dotted;
+	width: 100%;
+	float: none;
 }

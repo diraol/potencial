@@ -28,13 +28,27 @@ function clearCorrectDroppables(currentDroppable, newid){
     }
 }
 
+/* ******* FILTROS ********** */
+var filtro_dados = "reg-br";
+function opcao_selecionada_do_select(idSelect) {
+    var $select = $(idSelect),
+        si = $select.get(0).selectedIndex,
+        $selectedOpt = $select.children('option:eq(' + si + ')')[0].value;
+        return $selectedOpt;
+}
+/* Chamda de mudança de filtro */
+function altera_filtro_potencial(el) {
+    filtro_dados = opcao_selecionada_do_select(el);
+}
+
+/* Drag and Drop */
 $(function() {
     $("#sortable").sortable();
     $("#sortable").disableSelection();
     $(".draggable").draggable({
-        scroll: true,
-        revert: "valid",
-        snap: true,
+        refreshPositions: true,
+        opacity: 0.35,
+        revert: true,
         cursor: "move"
 
     });
@@ -45,7 +59,7 @@ $(function() {
                 newid = "clone-"+candName;
             clearCorrectDroppables(this, newid);
             addNewCloneChildren(ui.draggable, this, newid);
-            geraGraficoCircular("freq-"+candName, "graf-"+this.id, candName);
+            geraGraficoCircular(filtro_dados+"-"+candName, "graf-"+this.id, candName);
         }
     });
 });
@@ -90,9 +104,10 @@ function geraGraficoCircular(tabela, container, nome) {
 			    	layout: 'horizontal'
 			    },
 			    
-                xAxis: {
-			    	tickmarkPlacement: 'on',
+       xAxis: {
+	        tickmarkPlacement: 'on',
                     labels: {
+                        y: 3,
                         useHTML: true,
 			        	formatter: function () {
                             if ( this.isFirst ) {
@@ -102,11 +117,12 @@ function geraGraficoCircular(tabela, container, nome) {
                             }
 			        	}
                     }
-			    },
+	    },
 			        
 			    yAxis: {
                     endOnTick: true,
                     showLastLabel: true,
+                    tickPosition: "inside",
                     maxPadding: 0.4,
                     max: 50,
                     tickInterval: 10,
@@ -135,3 +151,8 @@ function geraGraficoCircular(tabela, container, nome) {
 		}
 	});
 }
+
+
+/* Códigos a serem rodados no carregamento da página */
+
+
