@@ -1,36 +1,20 @@
 /* ********** Load ************* */
 
-
 /* ******* FILTROS ********** */
-var filtro_dados = "reg-br";
-function opcao_selecionada_do_select(el) {
-    var $select = $(el),
-        si = $select.get(0).selectedIndex,
-        selectedOptGrp = null; 
-        console.log(si);
-    if (si <= 4) {
-        console.log("0");
-        selectedOptGrp = $select.children()[0];
-    } else if ( 5 <= si || si <= 8 ) {
-        console.log("1");
-        $selectedOptGrp = $($select.children()[1]);
-        si = si - 5;
-    } else if ( 9 <= si || si <= 13 ) {
-        console.log("2");
-        $selectedOptGrp = $($select.children()[2]);
-        si = si - 9;
-    } else {
-        console.log("3");
-        $selectedOptGrp = $($select.children()[3]);
-        si = si - 14;
-    }
-    console.log(selectedOptGrp);
-    //console.log($selectedOptGrp.children());
-    return $selectedOpt;
-}
-    /* Chamda de mudança de filtro */
+var filtro_dados = "reg-br",
+    nome_cand_esq = "",
+    nome_cand_dir = "",
+    cores = ["#EDC511", "#C9040E", "#99D3E0", "#000961"];
+
+/* Chamda de mudança de filtro */
 function altera_filtro_potencial(el) {
-    filtro_dados = opcao_selecionada_do_select(el);
+    filtro_dados = $(el)[0].value;//opcao_selecionada_do_select(el);
+    //Atualizando Gráfico da esquerda;
+    $("#graf-cand-esq").empty();
+    geraGraficoCircular(filtro_dados+"-"+nome_cand_esq, "graf-cand-esq", nome_cand_esq);
+    //Atualizando Gráfico da direita;
+    $("#graf-cand-dir").empty();
+    geraGraficoCircular(filtro_dados+"-"+nome_cand_dir, "graf-cand-dir", nome_cand_dir);
 }
 
 /* Drag and Drop */
@@ -71,8 +55,10 @@ $(function() {
         refreshPositions: true,
         opacity: 0.35,
         revert: true,
-        cursor: "move"
-
+        cursor: "move",
+        drag: function (event, ui) {
+            $(".tooltip").remove();;
+        }
     });
     $(".droppable").droppable({
         accept: '.draggable',
@@ -82,6 +68,11 @@ $(function() {
             clearCorrectDroppables(this, newid);
             addNewCloneChildren(ui.draggable, this, newid);
             geraGraficoCircular(filtro_dados+"-"+candName, "graf-"+this.id, candName);
+            if (this.id == "cand-esq"){
+                nome_cand_esq = candName;
+            } else {
+                nome_cand_dir = candName;
+            }
         }
     });
 });
@@ -102,7 +93,7 @@ function geraGraficoCircular(tabela, container, nome) {
     			
     		// Create the chart
     		window.chart = new Highcharts.Chart(Highcharts.merge(options, {
-		        colors: ["#EDC511", "#C9040E", "#99D3E0", "#000961"],
+		        colors: cores,
 			    chart: {
 			        renderTo: container,
 			        polar: true,
@@ -156,7 +147,10 @@ function geraGraficoCircular(tabela, container, nome) {
 			    },
 			    
 			    tooltip: {
-			    	valueSuffix: '%'
+                    formatter: function() {
+                        return this.x + ": <b>" + this.y + "%</b> ";
+                    }
+			    	//valueSuffix: '%'
 			    },
 			        
 			    plotOptions: {
