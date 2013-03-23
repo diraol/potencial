@@ -1,3 +1,39 @@
+/* ********** Load ************* */
+
+
+/* ******* FILTROS ********** */
+var filtro_dados = "reg-br";
+function opcao_selecionada_do_select(el) {
+    var $select = $(el),
+        si = $select.get(0).selectedIndex,
+        selectedOptGrp = null; 
+        console.log(si);
+    if (si <= 4) {
+        console.log("0");
+        selectedOptGrp = $select.children()[0];
+    } else if ( 5 <= si || si <= 8 ) {
+        console.log("1");
+        $selectedOptGrp = $($select.children()[1]);
+        si = si - 5;
+    } else if ( 9 <= si || si <= 13 ) {
+        console.log("2");
+        $selectedOptGrp = $($select.children()[2]);
+        si = si - 9;
+    } else {
+        console.log("3");
+        $selectedOptGrp = $($select.children()[3]);
+        si = si - 14;
+    }
+    console.log(selectedOptGrp);
+    //console.log($selectedOptGrp.children());
+    return $selectedOpt;
+}
+    /* Chamda de mudança de filtro */
+function altera_filtro_potencial(el) {
+    filtro_dados = opcao_selecionada_do_select(el);
+}
+
+/* Drag and Drop */
 function addNewCloneChildren(toClone, toAppend, newid) {
     $(toAppend).removeClass("placeholder");
     toClone.children().clone().appendTo( toAppend );
@@ -28,20 +64,6 @@ function clearCorrectDroppables(currentDroppable, newid){
     }
 }
 
-/* ******* FILTROS ********** */
-var filtro_dados = "reg-br";
-function opcao_selecionada_do_select(idSelect) {
-    var $select = $(idSelect),
-        si = $select.get(0).selectedIndex,
-        $selectedOpt = $select.children('option:eq(' + si + ')')[0].value;
-        return $selectedOpt;
-}
-/* Chamda de mudança de filtro */
-function altera_filtro_potencial(el) {
-    filtro_dados = opcao_selecionada_do_select(el);
-}
-
-/* Drag and Drop */
 $(function() {
     $("#sortable").sortable();
     $("#sortable").disableSelection();
@@ -155,4 +177,4 @@ function geraGraficoCircular(tabela, container, nome) {
 
 /* Códigos a serem rodados no carregamento da página */
 
-
+$('.img-rounded').tooltip();

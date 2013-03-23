@@ -74,8 +74,8 @@ a.brand img {
 }
 
 #versus {
-    font-size: 4em;
-    line-height: 78px;
+    font-size: 3em;
+    line-height: 46px;
 }
 
 #fotos .nomepol {
@@ -111,7 +111,7 @@ a.brand img {
     line-height: 60px;
     color: rgba(30,30,30,0.3);
     font-size: 0.9em;
-    content: "Arreste uma das fotos dos candidatos para esta área";
+    content: "Arraste uma das fotos dos candidatos para esta área";
 }
 
 #leia_tambem {
