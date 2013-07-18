@@ -1,0 +1,763 @@
+{
+    "pesq1": {
+        "data": "março/2013",
+        "dados": {
+            "Região": {
+                "Brasil": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 7,
+						"Poderia votar": 18,
+						"Não votaria de jeito nenhum": 36,
+						"Não conhece ou não sabe": 39
+					},
+                    "Dilma": {
+						"Votaria com certeza": 52,
+						"Poderia votar": 24,
+						"Não votaria de jeito nenhum": 20,
+						"Não conhece ou não sabe": 3
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 35,
+						"Não conhece ou não sabe": 54
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 6,
+						"Não votaria de jeito nenhum": 42,
+						"Não conhece ou não sabe": 51
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 4,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 47 
+					},
+                    "José Serra": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 50,
+						"Não conhece ou não sabe": 14
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 30,
+						"Não votaria de jeito nenhum": 40,
+						"Não conhece ou não sabe": 19
+					}
+                },
+                "Nordeste": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 46
+					},
+                    "Dilma": {
+						"Votaria com certeza": 62,
+						"Poderia votar": 20,
+						"Não votaria de jeito nenhum": 16,
+						"Não conhece ou não sabe": 1
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 31,
+						"Não conhece ou não sabe": 48
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 4,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 56
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 35,
+						"Não conhece ou não sabe": 53
+					},
+                    "José Serra": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 24,
+						"Não votaria de jeito nenhum": 53,
+						"Não conhece ou não sabe": 15
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 27,
+						"Não votaria de jeito nenhum": 42,
+						"Não conhece ou não sabe": 21
+					}
+                },
+                "Norte e Centro-Oeste": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 17,
+						"Não votaria de jeito nenhum": 45,
+						"Não conhece ou não sabe": 35
+					},
+                    "Dilma": {
+						"Votaria com certeza": 52,
+						"Poderia votar": 22,
+						"Não votaria de jeito nenhum": 19,
+						"Não conhece ou não sabe": 6
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 7,
+						"Não votaria de jeito nenhum": 46,
+						"Não conhece ou não sabe": 47
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 6,
+						"Não votaria de jeito nenhum": 44,
+						"Não conhece ou não sabe": 50
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 45
+					},
+                    "José Serra": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 52,
+						"Não conhece ou não sabe": 16
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 12,
+						"Poderia votar": 31,
+						"Não votaria de jeito nenhum": 40,
+						"Não conhece ou não sabe": 17
+					}
+                },
+                "Sudeste": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 12,
+						"Poderia votar": 23,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 31
+					},
+                    "Dilma": {
+						"Votaria com certeza": 45,
+						"Poderia votar": 28,
+						"Não votaria de jeito nenhum": 22,
+						"Não conhece ou não sabe": 4
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 7,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 58
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 45,
+						"Não conhece ou não sabe": 46
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 50
+					},
+                    "José Serra": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 51,
+						"Não conhece ou não sabe": 13
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 34,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 17
+					}
+                },
+                "Sul": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 4,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 31,
+						"Não conhece ou não sabe": 51
+					},
+                    "Dilma": {
+						"Votaria com certeza": 54,
+						"Poderia votar": 22,
+						"Não votaria de jeito nenhum": 19,
+						"Não conhece ou não sabe": 6
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 5,
+						"Não votaria de jeito nenhum": 33,
+						"Não conhece ou não sabe": 61
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 6,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 54
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 13,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 28,
+						"Não conhece ou não sabe": 38
+					},
+                    "José Serra": {
+						"Votaria com certeza": 13,
+						"Poderia votar": 32,
+						"Não votaria de jeito nenhum": 40,
+						"Não conhece ou não sabe": 16
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 40,
+						"Não conhece ou não sabe": 26
+					}
+                }
+            },
+            "Escolaridade": {
+                "Fundamental": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 6,
+						"Poderia votar": 19,
+						"Não votaria de jeito nenhum": 31,
+						"Não conhece ou não sabe": 42
+					},
+                    "Dilma": {
+						"Votaria com certeza": 61,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 14,
+						"Não conhece ou não sabe": 3
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 10,
+						"Não votaria de jeito nenhum": 32,
+						"Não conhece ou não sabe": 55
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 6,
+						"Não votaria de jeito nenhum": 37,
+						"Não conhece ou não sabe": 57
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 12,
+						"Não votaria de jeito nenhum": 33,
+						"Não conhece ou não sabe": 53
+					},
+                    "José Serra": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 46,
+						"Não conhece ou não sabe": 18
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 6,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 41,
+						"Não conhece ou não sabe": 24
+					}
+                },
+                "5ª a 8ª Série": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 6,
+						"Poderia votar": 19,
+						"Não votaria de jeito nenhum": 35,
+						"Não conhece ou não sabe": 39
+					},
+                    "Dilma": {
+						"Votaria com certeza": 58,
+						"Poderia votar": 20,
+						"Não votaria de jeito nenhum": 16,
+						"Não conhece ou não sabe": 5
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 10,
+						"Não votaria de jeito nenhum": 32,
+						"Não conhece ou não sabe": 55
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 6,
+						"Não votaria de jeito nenhum": 42,
+						"Não conhece ou não sabe": 52
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 12,
+						"Não votaria de jeito nenhum": 33,
+						"Não conhece ou não sabe": 51
+					},
+                    "José Serra": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 49,
+						"Não conhece ou não sabe": 15
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 30,
+						"Não votaria de jeito nenhum": 41,
+						"Não conhece ou não sabe": 21
+					}
+                },
+                "Ensino Médio": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 7,
+						"Poderia votar": 16,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 37
+					},
+                    "Dilma": {
+						"Votaria com certeza": 48,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 23,
+						"Não conhece ou não sabe": 4
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 7,
+						"Não votaria de jeito nenhum": 37,
+						"Não conhece ou não sabe": 53
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 6,
+						"Não votaria de jeito nenhum": 43,
+						"Não conhece ou não sabe": 49
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 4,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 36,
+						"Não conhece ou não sabe": 47
+					},
+                    "José Serra": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 27,
+						"Não votaria de jeito nenhum": 51,
+						"Não conhece ou não sabe": 11
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 12,
+						"Poderia votar": 31,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 18
+					}
+                },
+                "Ensino Superior": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 18,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 34
+					},
+                    "Dilma": {
+						"Votaria com certeza": 38,
+						"Poderia votar": 34,
+						"Não votaria de jeito nenhum": 24,
+						"Não conhece ou não sabe": 4
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 7,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 52
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 9,
+						"Não votaria de jeito nenhum": 50,
+						"Não conhece ou não sabe": 39
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 19,
+						"Não votaria de jeito nenhum": 35,
+						"Não conhece ou não sabe": 37
+					},
+                    "José Serra": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 23,
+						"Não votaria de jeito nenhum": 57,
+						"Não conhece ou não sabe": 11
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 14,
+						"Poderia votar": 32,
+						"Não votaria de jeito nenhum": 41,
+						"Não conhece ou não sabe": 12
+					}
+                }
+            },
+            "Renda (SM)": {
+                "Até 1": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 32,
+						"Não conhece ou não sabe": 52
+					},
+                    "Dilma": {
+						"Votaria com certeza": 63,
+						"Poderia votar": 18,
+						"Não votaria de jeito nenhum": 17,
+						"Não conhece ou não sabe": 2
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 6,
+						"Poderia votar": 11,
+						"Não votaria de jeito nenhum": 27,
+						"Não conhece ou não sabe": 56
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 5,
+						"Não votaria de jeito nenhum": 35,
+						"Não conhece ou não sabe": 60
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 32,
+						"Não conhece ou não sabe": 59
+					},
+                    "José Serra": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 24,
+						"Não votaria de jeito nenhum": 45,
+						"Não conhece ou não sabe": 20
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 41,
+						"Não conhece ou não sabe": 22
+					}
+                },
+                "Mais de 1 a 2": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 4,
+						"Poderia votar": 14,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 42
+					},
+                    "Dilma": {
+						"Votaria com certeza": 58,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 17,
+						"Não conhece ou não sabe": 3
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 36,
+						"Não conhece ou não sabe": 55
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 3,
+						"Não votaria de jeito nenhum": 40,
+						"Não conhece ou não sabe": 56
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 10,
+						"Não votaria de jeito nenhum": 36,
+						"Não conhece ou não sabe": 52
+					},
+                    "José Serra": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 23,
+						"Não votaria de jeito nenhum": 54,
+						"Não conhece ou não sabe": 13
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 22
+					}
+                },
+                "Mais de 2 a 5": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 20,
+						"Não votaria de jeito nenhum": 36,
+						"Não conhece ou não sabe": 35
+					},
+                    "Dilma": {
+						"Votaria com certeza": 48,
+						"Poderia votar": 27,
+						"Não votaria de jeito nenhum": 20,
+						"Não conhece ou não sabe": 5
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 56
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 43,
+						"Não conhece ou não sabe": 48
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 5,
+						"Poderia votar": 15,
+						"Não votaria de jeito nenhum": 33,
+						"Não conhece ou não sabe": 47
+					},
+                    "José Serra": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 47,
+						"Não conhece ou não sabe": 13
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 32,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 18
+					}
+                },
+                "Mais de 5 a 10": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 13,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 36,
+						"Não conhece ou não sabe": 30
+					},
+                    "Dilma": {
+						"Votaria com certeza": 44,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 22,
+						"Não conhece ou não sabe": 4
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 11,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 50
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 10,
+						"Não votaria de jeito nenhum": 48,
+						"Não conhece ou não sabe": 42
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 7,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 31,
+						"Não conhece ou não sabe": 40
+					},
+                    "José Serra": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 25,
+						"Não votaria de jeito nenhum": 51,
+						"Não conhece ou não sabe": 15
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 43,
+						"Não conhece ou não sabe": 19
+					}
+                },
+                "Mais de 10": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 20,
+						"Poderia votar": 27,
+						"Não votaria de jeito nenhum": 29,
+						"Não conhece ou não sabe": 25
+					},
+                    "Dilma": {
+						"Votaria com certeza": 36,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 2
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 7,
+						"Poderia votar": 4,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 56
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 13,
+						"Não votaria de jeito nenhum": 50,
+						"Não conhece ou não sabe": 38
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 16,
+						"Poderia votar": 21,
+						"Não votaria de jeito nenhum": 30,
+						"Não conhece ou não sabe": 32
+					},
+                    "José Serra": {
+						"Votaria com certeza": 13,
+						"Poderia votar": 29,
+						"Não votaria de jeito nenhum": 54,
+						"Não conhece ou não sabe": 5
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 46,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 9
+					}
+                }
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 9,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 48
+					},
+                    "Dilma": {
+						"Votaria com certeza": 68,
+						"Poderia votar": 16,
+						"Não votaria de jeito nenhum": 12,
+						"Não conhece ou não sabe": 3
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 5,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 56
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 3,
+						"Não votaria de jeito nenhum": 44,
+						"Não conhece ou não sabe": 54
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 11,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 45
+					},
+                    "José Serra": {
+						"Votaria com certeza": 10,
+						"Poderia votar": 26,
+						"Não votaria de jeito nenhum": 47,
+						"Não conhece ou não sabe": 16
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 6,
+						"Poderia votar": 24,
+						"Não votaria de jeito nenhum": 47,
+						"Não conhece ou não sabe": 22
+					}
+                },
+                "Cidades de 20 a 100 mil": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 19,
+						"Não votaria de jeito nenhum": 33,
+						"Não conhece ou não sabe": 41
+					},
+                    "Dilma": {
+						"Votaria com certeza": 54,
+						"Poderia votar": 23,
+						"Não votaria de jeito nenhum": 19,
+						"Não conhece ou não sabe": 4
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 4,
+						"Poderia votar": 11,
+						"Não votaria de jeito nenhum": 29,
+						"Não conhece ou não sabe": 56
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 0,
+						"Poderia votar": 7,
+						"Não votaria de jeito nenhum": 34,
+						"Não conhece ou não sabe": 58
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 3,
+						"Poderia votar": 12,
+						"Não votaria de jeito nenhum": 30,
+						"Não conhece ou não sabe": 55
+					},
+                    "José Serra": {
+						"Votaria com certeza": 13,
+						"Poderia votar": 28,
+						"Não votaria de jeito nenhum": 44,
+						"Não conhece ou não sabe": 15
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 33,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 19
+					}
+                },
+                "Cidades com mais de 100 mil": {
+                    "Aécio Neves": {
+						"Votaria com certeza": 8,
+						"Poderia votar": 19,
+						"Não votaria de jeito nenhum": 38,
+						"Não conhece ou não sabe": 36
+					},
+                    "Dilma": {
+						"Votaria com certeza": 47,
+						"Poderia votar": 27,
+						"Não votaria de jeito nenhum": 22,
+						"Não conhece ou não sabe": 4
+					},
+                    "Eduardo Campos": {
+						"Votaria com certeza": 2,
+						"Poderia votar": 8,
+						"Não votaria de jeito nenhum": 37,
+						"Não conhece ou não sabe": 54
+					},
+                    "Fernando Gabeira": {
+						"Votaria com certeza": 1,
+						"Poderia votar": 7,
+						"Não votaria de jeito nenhum": 46,
+						"Não conhece ou não sabe": 46
+					},
+                    "Joaquim Barbosa": {
+						"Votaria com certeza": 4,
+						"Poderia votar": 14,
+						"Não votaria de jeito nenhum": 37,
+						"Não conhece ou não sabe": 45
+					},
+                    "José Serra": {
+						"Votaria com certeza": 9,
+						"Poderia votar": 24,
+						"Não votaria de jeito nenhum": 54,
+						"Não conhece ou não sabe": 13
+					},
+                    "Marina Silva": {
+						"Votaria com certeza": 11,
+						"Poderia votar": 30,
+						"Não votaria de jeito nenhum": 39,
+						"Não conhece ou não sabe": 19
+					}
+                }
+            }
+        }
+    }
+}
