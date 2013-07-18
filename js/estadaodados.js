@@ -1,20 +1,21 @@
 /* ********** Load ************* */
 
 /* ******* FILTROS ********** */
-var filtro_dados = "reg-br",
+var pesquisa = "p1",
+    filtro_dados = "reg-br",
     nome_cand_esq = "",
     nome_cand_dir = "",
     cores = ["#EDC511", "#C9040E", "#99D3E0", "#000961"];
 
-/* Chamda de mudança de filtro */
+/* Chamada de mudança de filtro */
 function altera_filtro_potencial(el) {
     filtro_dados = $(el)[0].value;//opcao_selecionada_do_select(el);
     //Atualizando Gráfico da esquerda;
     $("#graf-cand-esq").empty();
-    geraGraficoCircular(filtro_dados+"-"+nome_cand_esq, "graf-cand-esq", nome_cand_esq);
+    if (nome_cand_esq) geraGraficoCircular(pesquisa+"-"+filtro_dados+"-"+nome_cand_esq, "graf-cand-esq", nome_cand_esq);
     //Atualizando Gráfico da direita;
     $("#graf-cand-dir").empty();
-    geraGraficoCircular(filtro_dados+"-"+nome_cand_dir, "graf-cand-dir", nome_cand_dir);
+    if (nome_cand_dir) geraGraficoCircular(pesquisa+"-"+filtro_dados+"-"+nome_cand_dir, "graf-cand-dir", nome_cand_dir);
 }
 
 /* Drag and Drop */
@@ -30,6 +31,7 @@ function clearCorrectDroppables(currentDroppable, newid){
         $("#graf-cand-esq").empty();
         if ($("#cand-dir").children()[0]) { //tem filhos?
             if ($("#cand-dir").children()[0].id == newid) {//cand já está no outro lado - remove
+                nome_cand_dir = "";
                 $("#cand-dir").empty();
                 $("#graf-cand-dir").empty();
                 $("#cand-dir").addClass("placeholder");
@@ -40,6 +42,7 @@ function clearCorrectDroppables(currentDroppable, newid){
         $("#graf-cand-dir").empty();
         if ($("#cand-esq").children()[0]) { //tem filhos?
             if ($("#cand-esq").children()[0].id == newid) {//cand já está no outro lado - remove
+                nome_cand_esq = "";
                 $("#cand-esq").empty();
                 $("#graf-cand-esq").empty();
                 $("#cand-esq").addClass("placeholder");
@@ -67,7 +70,7 @@ $(function() {
                 newid = "clone-"+candName;
             clearCorrectDroppables(this, newid);
             addNewCloneChildren(ui.draggable, this, newid);
-            geraGraficoCircular(filtro_dados+"-"+candName, "graf-"+this.id, candName);
+            geraGraficoCircular(pesquisa+"-"+filtro_dados+"-"+candName, "graf-"+this.id, candName);
             if (this.id == "cand-esq"){
                 nome_cand_esq = candName;
             } else {
