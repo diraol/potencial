@@ -1,0 +1,168 @@
+{
+    "pesq1":{
+        "data": "",
+        "dados": {
+            "Região": {
+                "Brasil": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Nordeste": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Norte e Centro-Oeste": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Sudeste": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Sul": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                }
+            },
+            "Escolaridade": {
+                "Fundamental": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "5ª a 8ª Série": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Ensino Médio": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Ensino Superior": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                }
+            },
+            "Renda (SM)": {
+                "Até 1": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Mais de 1 a 2": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Mais de 2 a 5": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Mais de 5 a 10": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Mais de 10": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                }
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Cidades de 20 a 100 mil": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                },
+                "Cidades com mais de 100 mil": {
+                    "Dilma": 0,
+                    "Marina": 0,
+                    "José Serra": 0,
+                    "Aécio Neves": 0,
+                    "Joaquim Barbosa": 0,
+                    "Eduardo Campos": 0,
+                    "Fernando Gabeira": 0
+                }
+            }
+        }
+    }
+}
