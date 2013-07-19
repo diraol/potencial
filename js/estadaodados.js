@@ -1,21 +1,118 @@
 /* ********** Load ************* */
 
 /* ******* FILTROS ********** */
-var pesquisa = "p1",
-    filtro_dados = "reg-br",
-    nome_cand_esq = "",
-    nome_cand_dir = "",
-    cores = ["#EDC511", "#C9040E", "#99D3E0", "#000961"];
+var cores = ["#EDC511", "#C9040E", "#99D3E0", "#000961"],
+    filtro = {
+        "esquerda": {
+            "pesquisa": "p2",
+            "dado": "reg-br",
+            "nome_cand": ""
+        },
+        "direita": {
+            "pesquisa": "p2",
+            "dado": "reg-br",
+            "nome_cand": ""
+        }
+    },
+    fotos_ocultas = [],
+    todos_candidatos = ["dilma","aecio","joaquim","marina","eduardo","serra","gabeira"],
+    presentes = {
+        "p1": ["dilma","aecio","joaquim","marina","eduardo","serra","gabeira"],
+        "p2": ["dilma","aecio","joaquim","marina","eduardo"]
+    }
+
+function ocultar_fotos_listadas(){
+    for (var i =0 ; i < fotos_ocultas.length; i++)
+        $("#" + fotos_ocultas[i]).fadeOut();
+    fotos_ocultas = [];
+}
+
+function limpar_candidato_de_um_lado(lado) {
+    if (lado == "esquerda") {
+        $("#cand-esq").empty();
+        $("#cand-esq").addClass("placeholder");
+        $("#graf-cand-esq").empty();
+        filtro["esquerda"]["nome_cand"] = "";
+        emiteAlerta("cand-esq");
+    } else {
+        $("#cand-dir").empty();
+        $("#cand-dir").addClass("placeholder");
+        $("#graf-cand-dir").empty();
+        filtro["direita"]["nome_cand"] = "";
+        emiteAlerta("cand-dir");
+    }
+}
+
+function verifica_candidatos_pesquisas(nome_corrente, lado) {
+    //Verificando se os candidatos aparecem em alguma das pesquisas
+    var pesquisas = [];
+        pesquisas.push(presentes[$("#selecao_pesquisa_esquerda")[0].value]);
+        pesquisas.push(presentes[$("#selecao_pesquisa_direita")[0].value]);
+
+        retorno = true;
+    
+    var cand_possiveis = [];
+
+    for (var i = 0; i < pesquisas.length ; i++)
+        for (var j = 0 ; j < pesquisas[i].length ; j++)
+            if (cand_possiveis.indexOf(pesquisas[i][j]) == -1)
+                cand_possiveis.push(pesquisas[i][j]);
+
+    for (var i = 0 ; i < todos_candidatos.length ; i++) {
+        if (cand_possiveis.indexOf(todos_candidatos[i]) > -1)
+            $("#" + todos_candidatos[i]).fadeIn();
+        else {
+            fotos_ocultas.push(todos_candidatos[i]);
+            if(nome_corrente == todos_candidatos[i]) {
+                limpar_candidato_de_um_lado(lado);
+                retorno = false;
+            }
+        }
+    }
+    ocultar_fotos_listadas();
+    return retorno
+}
+
+function emiteAlerta(div) {
+    jQuery('<div/>', {
+        id: 'alerta',
+        class: 'alert alert-error',
+        text: 'Potencial de voto não aferido nesta pesquisa.'
+    }).appendTo('#' + div);
+}
 
 /* Chamada de mudança de filtro */
-function altera_filtro_potencial(el) {
-    filtro_dados = $(el)[0].value;//opcao_selecionada_do_select(el);
-    //Atualizando Gráfico da esquerda;
-    $("#graf-cand-esq").empty();
-    if (nome_cand_esq) geraGraficoCircular(pesquisa+"-"+filtro_dados+"-"+nome_cand_esq, "graf-cand-esq", nome_cand_esq);
-    //Atualizando Gráfico da direita;
-    $("#graf-cand-dir").empty();
-    if (nome_cand_dir) geraGraficoCircular(pesquisa+"-"+filtro_dados+"-"+nome_cand_dir, "graf-cand-dir", nome_cand_dir);
+function altera_filtro(posicao, item, el) {
+
+    var div_foco = "",
+        div_foto = "",
+        nome_cand = filtro[posicao].nome_cand;
+
+    if (posicao == "esquerda") {
+        div_foco = "graf-cand-esq";
+        div_foto = "cand-esq";
+    } else {
+        div_foco = "graf-cand-dir";
+        div_foto = "cand-esq";
+    }
+  
+    if (item == "pesquisa")
+        window.filtro[posicao][item] = $(el)[0].value;
+
+    //Evita geração de gráfico casa não tenha candidato(a) selecionado(a)
+    if ( !verifica_candidatos_pesquisas(nome_cand, posicao) || nome_cand == "") {
+        return;
+    }
+
+    if (item != "pesquisa")
+        window.filtro[posicao][item] = $(el)[0].value;
+
+    var pesquisa = filtro[posicao].pesquisa;
+    var dado = filtro[posicao].dado;
+
+    //Atualizando Gráfico;
+    $("#" + div_foco).empty();
+    if (nome_cand) geraGraficoCircular(pesquisa+"-"+dado+"-"+nome_cand, div_foco, nome_cand);
 }
 
 /* Drag and Drop */
@@ -26,28 +123,14 @@ function addNewCloneChildren(toClone, toAppend, newid) {
 }
 
 function clearCorrectDroppables(currentDroppable, newid){
-    if ( (currentDroppable.id == "cand-esq") ) { //Dropando no box da esquerda
+    if ( currentDroppable.id == "cand-esq" ) { //Dropando no box da esquerda
+        filtro["esquerda"]["nome_cand"] = "";
         $("#cand-esq").empty();
         $("#graf-cand-esq").empty();
-        if ($("#cand-dir").children()[0]) { //tem filhos?
-            if ($("#cand-dir").children()[0].id == newid) {//cand já está no outro lado - remove
-                nome_cand_dir = "";
-                $("#cand-dir").empty();
-                $("#graf-cand-dir").empty();
-                $("#cand-dir").addClass("placeholder");
-            }
-        }
-    } else if ( (currentDroppable.id == "cand-dir") ) { // Dropando no box da direita
+    } else if ( currentDroppable.id == "cand-dir" ) { // Dropando no box da direita
+        filtro["direita"]["nome_cand"] = "";
         $("#cand-dir").empty();
         $("#graf-cand-dir").empty();
-        if ($("#cand-esq").children()[0]) { //tem filhos?
-            if ($("#cand-esq").children()[0].id == newid) {//cand já está no outro lado - remove
-                nome_cand_esq = "";
-                $("#cand-esq").empty();
-                $("#graf-cand-esq").empty();
-                $("#cand-esq").addClass("placeholder");
-            }
-        }
     }
 }
 
@@ -69,19 +152,32 @@ $(function() {
             var candName = ui.draggable.children()[0].id,
                 newid = "clone-"+candName;
             clearCorrectDroppables(this, newid);
-            addNewCloneChildren(ui.draggable, this, newid);
-            geraGraficoCircular(pesquisa+"-"+filtro_dados+"-"+candName, "graf-"+this.id, candName);
             if (this.id == "cand-esq"){
-                nome_cand_esq = candName;
-            } else {
-                nome_cand_dir = candName;
+
+                //verificando se o candidato existe na pesquisa
+                if (presentes[filtro["esquerda"]["pesquisa"]].indexOf(candName) == -1) return;
+                filtro["esquerda"]["nome_cand"] = candName;
+                var pesquisa = filtro["esquerda"]["pesquisa"],
+                    dado = filtro["esquerda"]["dado"];
+                geraGraficoCircular(pesquisa+"-"+dado+"-"+candName, "graf-"+this.id, candName);
+
+            } else if (this.id == "cand-dir") {
+
+                if (presentes[filtro["direita"]["pesquisa"]].indexOf(candName) == -1) return;
+                filtro["direita"]["nome_cand"] = candName;
+                var pesquisa = filtro["direita"]["pesquisa"],
+                    dado = filtro["direita"]["dado"];
+                geraGraficoCircular(pesquisa+"-"+dado+"-"+candName, "graf-"+this.id, candName);
+
             }
+            addNewCloneChildren(ui.draggable, this, newid);
         }
     });
 });
 
 /* HighCharts functions */
 function geraGraficoCircular(tabela, container, nome) {
+    
     // Parse the data from an inline table using the Highcharts Data plugin
     var graf = Highcharts.data({
     	table: tabela,

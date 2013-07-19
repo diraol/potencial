@@ -111,7 +111,7 @@ a.brand img {
     line-height: 60px;
     color: rgba(30,30,30,0.3);
     font-size: 0.9em;
-    content: "Arraste uma das fotos dos candidatos para esta área";
+    content: "Arraste uma das fotos para esta área";
 }
 
 #leia_tambem {
@@ -123,6 +123,9 @@ a.brand img {
     font-weight: bold;
 }
 
+span.oculto {
+    display: none;
+}
 
 footer {
 	font-size: 0.8em;
