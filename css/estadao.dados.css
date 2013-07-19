@@ -143,3 +143,6 @@ footer {
 	width: 100%;
 	float: none;
 }
+footer p {
+    padding-left: 5px;
+    padding-right: 5px;
