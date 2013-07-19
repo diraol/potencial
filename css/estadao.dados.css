@@ -9,6 +9,7 @@ body {
 }
 
 .titulo-header {
+    width: auto;
     padding-bottom: 0;
     padding-top: 10px;
     margin-bottom: 10px;
@@ -125,6 +126,11 @@ a.brand img {
 
 span.oculto {
     display: none;
+}
+
+#social_sharing {
+    margin-left: 0;
+    margin-top: 14px;
 }
 
 footer {
