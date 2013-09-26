@@ -1,24 +1,25 @@
 /* ********** Load ************* */
 
 /* ******* FILTROS ********** */
-var cores = ["#EDC511", "#C9040E", "#99D3E0", "#000961"],
+    var cores = ["#B8B88F", "#B88FA3", "#265926", "#262659"], //A1 , A4 , C11  , C7
     filtro = {
         "esquerda": {
-            "pesquisa": "p2",
+            "pesquisa": "p3",
             "dado": "reg-br",
             "nome_cand": ""
         },
         "direita": {
-            "pesquisa": "p2",
+            "pesquisa": "p3",
             "dado": "reg-br",
             "nome_cand": ""
         }
     },
     fotos_ocultas = [],
-    todos_candidatos = ["dilma","aecio","joaquim","marina","eduardo","serra","gabeira"],
+    todos_candidatos = ["dilma","aecio","marina","eduardo","serra","joaquim","gabeira"],
     presentes = {
-        "p1": ["dilma","aecio","joaquim","marina","eduardo","serra","gabeira"],
-        "p2": ["dilma","aecio","joaquim","marina","eduardo"]
+        "p1": ["dilma","aecio","marina","eduardo","serra","joaquim","gabeira"],
+        "p2": ["dilma","aecio","marina","eduardo","joaquim"],
+        "p3": ["dilma","aecio","marina","eduardo","serra"]
     }
 
 function ocultar_fotos_listadas(){
