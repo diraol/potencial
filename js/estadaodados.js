@@ -19,7 +19,8 @@
     presentes = {
         "p1": ["dilma","aecio","marina","eduardo","serra","joaquim","gabeira"],
         "p2": ["dilma","aecio","marina","eduardo","joaquim"],
-        "p3": ["dilma","aecio","marina","eduardo","serra"]
+        "p3": ["dilma","aecio","marina","eduardo","serra"],
+        "p4": ["dilma","aecio","marina","eduardo","serra"]
     }
 
 function ocultar_fotos_listadas(){
@@ -53,7 +54,7 @@ function verifica_candidatos_pesquisas(nome_corrente, lado) {
         retorno = true;
     
     var cand_possiveis = [];
-
+    console.log(pesquisas);
     for (var i = 0; i < pesquisas.length ; i++)
         for (var j = 0 ; j < pesquisas[i].length ; j++)
             if (cand_possiveis.indexOf(pesquisas[i][j]) == -1)
