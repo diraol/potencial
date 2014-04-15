@@ -31,17 +31,41 @@ a.brand img {
 #fotos {
 }
 
-#fotos li.span2, #fotos li.span2 p {
+#fotos li.span12, #fotos li.span12 p {
     margin-bottom: 2px;
 }
 
 #fotos .thumbnails li {
+    transition: opacity 0.25s ease-out, display 1.5s ease-out, margin 1.5s ease-out, max-height 1.5s ease-out;
+    display: block;
+    max-height: 200px;
     margin-left: 0px;
     margin-bottom: 7px;
+    opacity: 1;
 }
 
+#fotos .thumbnails li.oculto {
+    margin-bottom: 0px;
+    display: block;
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/* UNUSED */
 #fotos span {
+    transition: opacity 0.5s ease-out, display 0.25s ease-out, margin 0.25s ease-out, height 0.25s ease-out;
     margin-top: 1px;
+    display: block;
+}
+
+/* UNUSED */
+#fotos span.oculto {
+    display: block;
+    height: 0;
+    margin-top: 0;
+    opacity: 0;
+    overflow: hidden;
 }
 
 #comparativo {
@@ -95,7 +119,13 @@ a.brand img {
 }
 
 #graficos [id*="graf-cand"] {
-    
+    min-height: 400px;
+}
+
+.graf-container {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
@@ -122,10 +152,6 @@ a.brand img {
 
 #leia_tambem h1 {
     font-weight: bold;
-}
-
-span.oculto {
-    display: none;
 }
 
 #social_sharing {

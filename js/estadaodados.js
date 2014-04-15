@@ -1,86 +1,110 @@
 /* ********** Load ************* */
 
 /* ******* FILTROS ********** */
-    var cores = ["#B8B88F", "#B88FA3", "#265926", "#262659"], //A1 , A4 , C11  , C7
+    var cores = ["#262659", "#265926", "#B88FA3", "#B8B88F"],
     filtro = {
         "esquerda": {
-            "pesquisa": "p3",
-            "dado": "reg-br",
-            "nome_cand": ""
+            "pesquisa": "p5",
+            "pergunta": "reg-br",
+            "nome_cand": "",
+            "container": "graf-cand-esq"
         },
         "direita": {
-            "pesquisa": "p3",
-            "dado": "reg-br",
-            "nome_cand": ""
+            "pesquisa": "p5",
+            "pergunta": "reg-br",
+            "nome_cand": "",
+            "container": "graf-cand-dir"
         }
     },
-    fotos_ocultas = [],
-    todos_candidatos = ["dilma","aecio","marina","eduardo","serra","joaquim","gabeira"],
-    presentes = {
-        "p1": ["dilma","aecio","marina","eduardo","serra","joaquim","gabeira"],
-        "p2": ["dilma","aecio","marina","eduardo","joaquim"],
-        "p3": ["dilma","aecio","marina","eduardo","serra"],
-        "p4": ["dilma","aecio","marina","eduardo","serra"]
+    jsonFile = "dados/dados.json",
+    mainData = {};
+
+    var label_perguntas = {
+        "reg-br": ["Região","Brasil"],
+        "reg-ne": ["Região","Nordeste"],
+        "reg-nco": ["Região","Norte e Centro-Oeste"],
+        "reg-se": ["Região","Sudeste"],
+        "reg-s": ["Região","Sul"],
+        "esc-fund1": ["Escolaridade","Fundamental"],
+        "esc-fund2": ["Escolaridade","5ª a 8ª Série"],
+        "esc-med": ["Escolaridade","Ensino Médio"],
+        "esc-sup": ["Escolaridade","Ensino Superior"],
+        "renda-1sm": ["Renda (SM)","Até 1"],
+        "renda-2sm": ["Renda (SM)","Mais de 1 a 2"],
+        "renda-5sm": ["Renda (SM)","Mais de 2 a 5"],
+        "renda-m5sm": ["Renda (SM)","Mais de 5"],
+        "porte-20mil": ["Porte do Município (Habitantes)","Cidades com até 20 mil"],
+        "porte-20-a-100mil": ["Porte do Município (Habitantes)","Cidades de 20 a 100 mil"],
+        "porte-100mil": ["Porte do Município (Habitantes)","Cidades com mais de 100 mil"]
     }
 
-function ocultar_fotos_listadas(){
-    for (var i =0 ; i < fotos_ocultas.length; i++)
-        $("#" + fotos_ocultas[i]).fadeOut();
-    fotos_ocultas = [];
+
+function candidatos_lado(lado) {
+    candidatos = [];
+    for (cand in mainData[$("#selecao_pesquisa_" + lado)[0].value].data) {
+        candidatos.push(cand);
+    }
+    return candidatos;
+}
+
+function candidatos_possiveis(){
+    //Candidatos que aparecem em alguma das pesquisas selecionadas
+    var candidatos = [].concat(candidatos_lado("esquerda"));
+    cand_dir = [].concat(candidatos_lado("direita"));
+    for (idx in cand_dir) {
+        if (candidatos.indexOf(cand_dir[idx]) == -1) {
+            candidatos.push(cand_dir[idx]);
+
+        }
+    }
+    return candidatos;
+}
+
+function atualizar_fotos(){
+    candidatos = candidatos_possiveis();
+    fotos = $(".cand");
+    for (idx in fotos) {
+        nome = fotos[idx].title;
+        id = fotos[idx].id;
+        if (candidatos.indexOf(nome) == -1) {
+            $("#" + id).parent().fadeOut().addClass('oculto');
+        } else {
+            $("#" + id).parent().show().fadeIn().removeClass('oculto');
+        }
+    }
 }
 
 function limpar_candidato_de_um_lado(lado) {
     if (lado == "esquerda") {
-        $("#cand-esq").empty();
-        $("#cand-esq").addClass("placeholder");
-        $("#graf-cand-esq").empty();
+        $("#cand-esq, #graf-cand-esq").fadeOut(200, function(){
+            $("#cand-esq, #graf-cand-esq").empty()
+            .addClass("placeholder")
+            .fadeIn(400)});
         filtro["esquerda"]["nome_cand"] = "";
-        emiteAlerta("cand-esq");
     } else {
-        $("#cand-dir").empty();
-        $("#cand-dir").addClass("placeholder");
-        $("#graf-cand-dir").empty();
+        $("#cand-dir, #graf-cand-dir").fadeOut(200, function(){
+            $("#cand-dir, #graf-cand-dir").empty()
+            .addClass("placeholder")
+            .fadeIn(400)});
         filtro["direita"]["nome_cand"] = "";
-        emiteAlerta("cand-dir");
     }
 }
 
-function verifica_candidatos_pesquisas(nome_corrente, lado) {
-    //Verificando se os candidatos aparecem em alguma das pesquisas
-    var pesquisas = [];
-        pesquisas.push(presentes[$("#selecao_pesquisa_esquerda")[0].value]);
-        pesquisas.push(presentes[$("#selecao_pesquisa_direita")[0].value]);
-
-        retorno = true;
-    
-    var cand_possiveis = [];
-    console.log(pesquisas);
-    for (var i = 0; i < pesquisas.length ; i++)
-        for (var j = 0 ; j < pesquisas[i].length ; j++)
-            if (cand_possiveis.indexOf(pesquisas[i][j]) == -1)
-                cand_possiveis.push(pesquisas[i][j]);
-
-    for (var i = 0 ; i < todos_candidatos.length ; i++) {
-        if (cand_possiveis.indexOf(todos_candidatos[i]) > -1)
-            $("#" + todos_candidatos[i]).fadeIn();
-        else {
-            fotos_ocultas.push(todos_candidatos[i]);
-            if(nome_corrente == todos_candidatos[i]) {
-                limpar_candidato_de_um_lado(lado);
-                retorno = false;
-            }
-        }
+function verifica_candidato(nome, lado) {
+    var candidatos_possiveis = candidatos_lado(lado);
+    if (candidatos_possiveis.indexOf(nome) == -1) {
+        return false;
+    } else {
+        return true;
     }
-    ocultar_fotos_listadas();
-    return retorno
 }
 
-function emiteAlerta(div) {
+function emiteAlerta(div_id) {
     jQuery('<div/>', {
         id: 'alerta',
         class: 'alert alert-error',
         text: 'Potencial de voto não aferido nesta pesquisa.'
-    }).appendTo('#' + div);
+    }).appendTo('#' + div_id);
 }
 
 /* Chamada de mudança de filtro */
@@ -88,7 +112,7 @@ function altera_filtro(posicao, item, el) {
 
     var div_foco = "",
         div_foto = "",
-        nome_cand = filtro[posicao].nome_cand;
+        nome_cand = filtro[posicao]["nome_cand"];
 
     if (posicao == "esquerda") {
         div_foco = "graf-cand-esq";
@@ -97,24 +121,27 @@ function altera_filtro(posicao, item, el) {
         div_foco = "graf-cand-dir";
         div_foto = "cand-esq";
     }
-  
-    if (item == "pesquisa")
+
+    if (item == "pesquisa") {
         window.filtro[posicao][item] = $(el)[0].value;
+        atualizar_fotos();
+    }
 
     //Evita geração de gráfico casa não tenha candidato(a) selecionado(a)
-    if ( !verifica_candidatos_pesquisas(nome_cand, posicao) || nome_cand == "") {
+    if ( !verifica_candidato(nome_cand, posicao) || nome_cand == "") {
+        limpar_candidato_de_um_lado(posicao);
         return;
     }
 
     if (item != "pesquisa")
         window.filtro[posicao][item] = $(el)[0].value;
 
-    var pesquisa = filtro[posicao].pesquisa;
-    var dado = filtro[posicao].dado;
+    var pesquisa = filtro[posicao]["pesquisa"];
+    var pergunta = filtro[posicao]["pergunta"];
 
     //Atualizando Gráfico;
     $("#" + div_foco).empty();
-    if (nome_cand) geraGraficoCircular(pesquisa+"-"+dado+"-"+nome_cand, div_foco, nome_cand);
+    if (nome_cand) geraGraficoCircular(filtro[posicao]);
 }
 
 /* Drag and Drop */
@@ -124,7 +151,7 @@ function addNewCloneChildren(toClone, toAppend, newid) {
     $(toAppend).children()[0].id = newid;
 }
 
-function clearCorrectDroppables(currentDroppable, newid){
+function clearCorrectDroppables(currentDroppable){
     if ( currentDroppable.id == "cand-esq" ) { //Dropando no box da esquerda
         filtro["esquerda"]["nome_cand"] = "";
         $("#cand-esq").empty();
@@ -151,25 +178,29 @@ $(function() {
     $(".droppable").droppable({
         accept: '.draggable',
         drop: function( event, ui ) {
-            var candName = ui.draggable.children()[0].id,
+            var candName = ui.draggable.children()[0].title,
                 newid = "clone-"+candName;
-            clearCorrectDroppables(this, newid);
+            clearCorrectDroppables(this);
             if (this.id == "cand-esq"){
-
+                presentes = candidatos_lado("esquerda")
                 //verificando se o candidato existe na pesquisa
-                if (presentes[filtro["esquerda"]["pesquisa"]].indexOf(candName) == -1) return;
+                if (presentes.indexOf(candName) == -1) return;
                 filtro["esquerda"]["nome_cand"] = candName;
                 var pesquisa = filtro["esquerda"]["pesquisa"],
-                    dado = filtro["esquerda"]["dado"];
-                geraGraficoCircular(pesquisa+"-"+dado+"-"+candName, "graf-"+this.id, candName);
+                    pergunta = filtro["esquerda"]["pergunta"];
+                //geraGraficoCircular(pesquisa+"-"+pergunta+"-"+candName, "graf-"+this.id, candName);
+                geraGraficoCircular(filtro["esquerda"]);
 
             } else if (this.id == "cand-dir") {
-
-                if (presentes[filtro["direita"]["pesquisa"]].indexOf(candName) == -1) return;
+                presentes = candidatos_lado("direita")
+                //verificando se o candidato existe na pesquisa
+                //if (presentes[filtro["direita"]["pesquisa"]].indexOf(candName) == -1) return;
+                if (presentes.indexOf(candName) == -1) return;
                 filtro["direita"]["nome_cand"] = candName;
                 var pesquisa = filtro["direita"]["pesquisa"],
-                    dado = filtro["direita"]["dado"];
-                geraGraficoCircular(pesquisa+"-"+dado+"-"+candName, "graf-"+this.id, candName);
+                    pergunta = filtro["direita"]["pergunta"];
+                //geraGraficoCircular(pesquisa+"-"+pergunta+"-"+candName, "graf-"+this.id, candName);
+                geraGraficoCircular(filtro["direita"]);
 
             }
             addNewCloneChildren(ui.draggable, this, newid);
@@ -178,98 +209,114 @@ $(function() {
 });
 
 /* HighCharts functions */
-function geraGraficoCircular(tabela, container, nome) {
-    
-    // Parse the data from an inline table using the Highcharts Data plugin
-    var graf = Highcharts.data({
-    	table: tabela,
-    	startRow: 0,
-    	endRow: 5,
-    	endColumn: 5,
-    	
-    	complete: function (options) {
-    		
-    		// Some further processing of the options
-    		options.series.reverse(); // to get the stacking right
-    			
-    		// Create the chart
-    		window.chart = new Highcharts.Chart(Highcharts.merge(options, {
-		        colors: cores,
-			    chart: {
-			        renderTo: container,
-			        polar: true,
-			        type: 'column'
-			    },
-			    
-			    title: {
-			        text: "" 
-			    },
-			    
-			    pane: {
-			    	size: '85%'
-			    },
-			    
-			    legend: {
-                    enabled: false,
-			    	reversed: true,
-			    	align: 'center',
-			    	verticalAlign: 'bottom',
-			    	y: 100,
-			    	layout: 'horizontal'
-			    },
-			    
-       xAxis: {
-	        tickmarkPlacement: 'on',
-                    labels: {
-                        y: 3,
-                        useHTML: true,
-			        	formatter: function () {
-                            if ( this.isFirst ) {
-                                return "<span style='margin-bottom:30px;'>"+ this.value + "</span>";
+function geraGraficoCircular(chave_filtro) {
+
+    var options = {
+            chart: {
+                renderTo: chave_filtro['container'],
+                polar: true,
+                type: 'column',
+                reflow: true
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            title: {
+                text: ""
+            },
+
+            pane: {
+                startAngle: 0
+            },
+
+            xAxis: {
+                categories: ["Votaria com certeza","Poderia votar","Não votaria de jeito nenhum","Não conhece ou não sabe"],
+                tickmarkPlacement: 'on',
+                labels: {
+                    y: 3,
+                    useHTML: true,
+                    formatter: function () {
+                        if (this.isFirst) {
+                            return "<span style='margin-bottom: 30px; white-space: nowrap; margin-left: -15px;'>"+ this.value + "</span>";
+                        } else {
+                            if (this.value == "Não conhece ou não sabe") {
+                            return "<span style='margin-top: 30px; display:block;'></span>"+ this.value;
                             } else {
-			        		    return this.value;
+                                return this.value;
                             }
-			        	}
+                        }
                     }
-	    },
-			        
-			    yAxis: {
-                    endOnTick: true,
-                    showLastLabel: true,
-                    tickPosition: "inside",
-                    maxPadding: 0.4,
-                    max: 50,
-                    tickInterval: 10,
-			        labels: {
-			        	formatter: function () {
-			        		return this.value + '%';
-			        	}
-			        }
-			    },
-			    
-			    tooltip: {
-                    formatter: function() {
-                        return this.x + ": <b>" + this.y + "%</b> ";
+                }
+            },
+
+            yAxis: {
+                endOnTick: true,
+                showLastLabel: true,
+                tickPosition: "inside",
+                maxPadding: 0.4,
+                max: 50,
+                tickInterval: 10,
+                labels: {
+                    formatter: function () {
+                        return this.value + '%';
                     }
-			    	//valueSuffix: '%'
-			    },
-			        
-			    plotOptions: {
-			        series: {
-			        	stacking: 'normal',
-			        	shadow: true,
-			        	groupPadding: 0,
-			        	pointPlacement: 'on',
-                        borderColor: "#D4D4D4"
-			        }
-			    }
-			}));
-			
-		}
-	});
+                }
+            },
+
+            tooltip: {
+                pointFormat: '<span style="color: {series.color}; font-weight: bold;>{point.y}</span>"',
+                valueSuffix: '%',
+                shared: true
+            },
+
+            plotOptions: {
+                column: {
+                    allowPointSelect: true,
+                    colorByPoint: true,
+                    colors: cores
+                },
+                series: {
+                    stacking: 'normal',
+                    shadow: true,
+                    groupPadding: 0,
+                    pointPlacement: 'on',
+                    borderColor: "#D4D4D4"
+                }
+            },
+
+            legend: {
+                enabled: false,
+            },
+
+            series:[{}]
+        }
+
+    pergunta_cat = label_perguntas[chave_filtro['pergunta']][0];
+    opcao_pergunta = label_perguntas[chave_filtro['pergunta']][1];
+    options.series[0].data = mainData[chave_filtro['pesquisa']]["data"][chave_filtro['nome_cand']][pergunta_cat][opcao_pergunta];
+    window.chart = new Highcharts.Chart(options);
+}
+
+function carrega_combos(){
+    //Preenchendo o combo de pesquisas existentes
+    var ultima_pesquisa = ""
+    for ( var pesquisa in mainData ){
+        $('#selecao_pesquisa_esquerda').append(new Option(mainData.pesquisa.nome, pesquisa, true, true));
+        $('#selecao_pesquisa_direita').append(new Option(mainData.pesquisa.nome, pesquisa, true, true));
+        ultima_pesquisa = pesquisa;
+    }
 }
 
 
 /* Códigos a serem rodados no carregamento da página */
-
-$('.img-rounded').tooltip();
+$('.img-rounded').tooltip(); /* Adicionando tooltip */
+$(document).ready(function(){
+    $.getJSON('dados/dados.json').done(function(dados) {
+        window.mainData = dados[0];
+        }).error(function(jqxhr, textStatus, error){
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+        });
+});

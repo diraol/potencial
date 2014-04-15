@@ -1,166 +1,114 @@
 {
-    "pesq1":{
-        "data": "",
-        "dados": {
-            "Região": {
-                "Brasil": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+    "p6": {
+        "name": "Pesquisa 6 - Abril/2014",
+        "date": "04/2014",
+        "data": {
+            "Aécio Neves": {
+                "Escolaridade": {
+                    "Fundamental": [],
+                    "5ª a 8ª Série": [],
+                    "Ensino Médio": [],
+                    "Ensino Superior": []
                 },
-                "Nordeste": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Região": {
+                    "Brasil": [],
+                    "Nordeste": [],
+                    "Norte e Centro-Oeste": [],
+                    "Sudeste": [],
+                    "Sul": []
                 },
-                "Norte e Centro-Oeste": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Porte do Município (Habitantes)": {
+                    "Cidades com até 20 mil": [],
+                    "Cidades de 20 a 100 mil": [],
+                    "Cidades com mais de 100 mil": []
                 },
-                "Sudeste": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
-                },
-                "Sul": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Renda (SM)": {
+                    "Até 1": [],
+                    "Mais de 1 a 2": [],
+                    "Mais de 2 a 5": [],
+                    "Mais de 5 a 10": [],
+                    "Mais de 10": []
                 }
             },
-            "Escolaridade": {
-                "Fundamental": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+            "Dilma Rousseff":  {
+                "Escolaridade": {
+                    "Fundamental": [],
+                    "5ª a 8ª Série": [],
+                    "Ensino Médio": [],
+                    "Ensino Superior": []
                 },
-                "5ª a 8ª Série": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Região": {
+                    "Brasil": [],
+                    "Nordeste": [],
+                    "Norte e Centro-Oeste": [],
+                    "Sudeste": [],
+                    "Sul": []
                 },
-                "Ensino Médio": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Porte do Município (Habitantes)": {
+                    "Cidades com até 20 mil": [],
+                    "Cidades de 20 a 100 mil": [],
+                    "Cidades com mais de 100 mil": []
                 },
-                "Ensino Superior": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Renda (SM)": {
+                    "Até 1": [],
+                    "Mais de 1 a 2": [],
+                    "Mais de 2 a 5": [],
+                    "Mais de 5 a 10": [],
+                    "Mais de 10": []
                 }
             },
-            "Renda (SM)": {
-                "Até 1": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+            "Eduardo Campos":  {
+                "Escolaridade": {
+                    "Fundamental": [],
+                    "5ª a 8ª Série": [],
+                    "Ensino Médio": [],
+                    "Ensino Superior": []
                 },
-                "Mais de 1 a 2": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Região": {
+                    "Brasil": [],
+                    "Nordeste": [],
+                    "Norte e Centro-Oeste": [],
+                    "Sudeste": [],
+                    "Sul": []
                 },
-                "Mais de 2 a 5": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Porte do Município (Habitantes)": {
+                    "Cidades com até 20 mil": [],
+                    "Cidades de 20 a 100 mil": [],
+                    "Cidades com mais de 100 mil": []
                 },
-                "Mais de 5 a 10": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
-                },
-                "Mais de 10": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Renda (SM)": {
+                    "Até 1": [],
+                    "Mais de 1 a 2": [],
+                    "Mais de 2 a 5": [],
+                    "Mais de 5 a 10": [],
+                    "Mais de 10": []
                 }
             },
-            "Porte do Município (Habitantes)": {
-                "Cidades com até 20 mil": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+            "Marina Silva":  {
+                "Escolaridade": {
+                    "Fundamental": [],
+                    "5ª a 8ª Série": [],
+                    "Ensino Médio": [],
+                    "Ensino Superior": []
                 },
-                "Cidades de 20 a 100 mil": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Região": {
+                    "Brasil": [],
+                    "Nordeste": [],
+                    "Norte e Centro-Oeste": [],
+                    "Sudeste": [],
+                    "Sul": []
                 },
-                "Cidades com mais de 100 mil": {
-                    "Dilma": 0,
-                    "Marina": 0,
-                    "José Serra": 0,
-                    "Aécio Neves": 0,
-                    "Joaquim Barbosa": 0,
-                    "Eduardo Campos": 0,
-                    "Fernando Gabeira": 0
+                "Porte do Município (Habitantes)": {
+                    "Cidades com até 20 mil": [],
+                    "Cidades de 20 a 100 mil": [],
+                    "Cidades com mais de 100 mil": []
+                },
+                "Renda (SM)": {
+                    "Até 1": [],
+                    "Mais de 1 a 2": [],
+                    "Mais de 2 a 5": [],
+                    "Mais de 5 a 10": [],
+                    "Mais de 10": []
                 }
             }
         }
