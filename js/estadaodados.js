@@ -309,12 +309,26 @@ function carrega_combos(){
     }
 }
 
+function first_load_on_html(){
+    var esquerda = $("#selecao_pesquisa_esquerda"),
+        direita = $("#selecao_pesquisa_direita"),
+        rodape = $("footer small:first");
+    $.each(mainData,function(index,value){
+        esquerda.prepend($("<option>").attr('value',index).text(value.name));
+        direita.prepend($("<option>").attr('value',index).text(value.name));
+        rodape.prepend("Na pesquisa de " + value.mes + ", o Ibope entrevistou face a face " + value.entrevistas + " eleitores em " + value.municipios + " municípios de todas as regiões do Brasil entre os dias " + value.dias + " daquele mês.<br/>");
+    });
+}
+
+function preenche_rodape_pesqusias(){
+}
 
 /* Códigos a serem rodados no carregamento da página */
 $('.img-rounded').tooltip(); /* Adicionando tooltip */
 $(document).ready(function(){
     $.getJSON('dados/dados.json').done(function(dados) {
         window.mainData = dados[0];
+        first_load_on_html();
         }).error(function(jqxhr, textStatus, error){
             var err = textStatus + ", " + error;
             console.log( "Request Failed: " + err );

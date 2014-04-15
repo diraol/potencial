@@ -1,7 +1,10 @@
 [{
 "p1": {
     "name": "Pesquisa 1 - Março/2013",
-    "date": "03/2013",
+    "dias": "14 e 18",
+    "mes": "março de 2013",
+    "entrevistas": "2002",
+    "municipios": "142",
     "data": {
         "Aécio Neves":  {
             "Região": {
@@ -189,8 +192,11 @@
     }
 },
 "p2": {
-    "name": "Pesquisa 2 - Março/2013",
-    "date": "03/2013",
+    "name": "Pesquisa 2 - Julho/2013",
+    "dias": "11 e 14",
+    "mes": "julho de 2013",
+    "entrevistas": "2002",
+    "municipios": "140",
     "data": {
         "Aécio Neves":  {
             "Região": {
@@ -325,8 +331,11 @@
     }
 },
 "p3": {
-    "name": "Pesquisa 3 - Março/2013",
-    "date": "03/2013",
+    "name": "Pesquisa 3 - Setembro/2013",
+    "dias": "12 e 16",
+    "mes": "setembro de 2013",
+    "entrevistas": "2002",
+    "municipios": "142",
     "data": {
         "Aécio Neves":  {
             "Região": {
@@ -461,8 +470,11 @@
     }
 },
 "p4": {
-    "name": "Pesquisa 1 - Março/2013",
-    "date": "03/2013",
+    "name": "Pesquisa 4 - Outubro/2013",
+    "dias": "17 e 21",
+    "mes": "outubro de 2013",
+    "entrevistas": "2002",
+    "municipios": "142",
     "data": {
         "Aécio Neves":  {
             "Região": {
@@ -597,8 +609,11 @@
     }
 },
 "p5": {
-    "name": "Pesquisa 1 - Março/2013",
-    "date": "03/2013",
+    "name": "Pesquisa 5 - Março/2014",
+    "dias": "13 e 17",
+    "mes": "março de 2014",
+    "entrevistas": "2002",
+    "municipios": "140",
     "data": {
         "Aécio Neves":  {
             "Região": {
