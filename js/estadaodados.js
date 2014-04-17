@@ -266,7 +266,7 @@ function geraGraficoCircular(chave_filtro) {
             },
 
             tooltip: {
-                pointFormat: '<span style="color: {series.color}; font-weight: bold;>{point.y}</span>"',
+                pointFormat: '<span style="color: {series.color}; font-weight: bold;">{point.y}</span>',
                 valueSuffix: '%',
                 shared: true
             },
