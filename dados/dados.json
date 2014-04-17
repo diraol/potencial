@@ -720,5 +720,118 @@
             }
         }
     }
+},
+"p6": {
+    "name": "Pesquisa 6 - Abril/2014",
+    "dias": "10 e 14",
+    "mes": "abril de 2014",
+    "entrevistas": "2002",
+    "municipios": "140",
+    "data": {
+        "Aécio Neves": {
+            "Escolaridade": {
+                "Fundamental": [10,20,38,33],
+                "5ª a 8ª Série": [11,21,39,28],
+                "Ensino Médio": [12,23,41,23],
+                "Ensino Superior": [16,29,37,17]
+            },
+            "Região": {
+                "Brasil": [12,23,39,26],
+                "Nordeste": [5,21,41,33],
+                "Norte e Centro-Oeste": [10,26,28,37],
+                "Sudeste": [17,23,41,19],
+                "Sul": [10,22,44,24]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [9,22,38,31],
+                "Cidades de 20 a 100 mil": [13,24,40,22],
+                "Cidades com mais de 100 mil": [12,23,39,26]
+            },
+            "Renda (SM)": {
+                "Até 1": [6,17,44,34],
+                "Mais de 1 a 2": [9,22,38,31],
+                "Mais de 2 a 5": [14,26,38,23],
+                "Mais de 5": [20,24,40,16]
+            }
+        },
+        "Dilma Rousseff":  {
+            "Escolaridade": {
+                "Fundamental": [43,19,29,9],
+                "5ª a 8ª Série": [34,20,38,7],
+                "Ensino Médio": [29,20,43,8],
+                "Ensino Superior": [20,18,55,7]
+            },
+            "Região": {
+                "Brasil": [32,19,40,8],
+                "Nordeste": [43,22,28,6],
+                "Norte e Centro-Oeste": [37,20,30,12],
+                "Sudeste": [27,19,48,6],
+                "Sul": [24,16,49,10]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [41,19,32,7],
+                "Cidades de 20 a 100 mil": [35,19,40,6],
+                "Cidades com mais de 100 mil": [29,20,43,9]
+            },
+            "Renda (SM)": {
+                "Até 1": [46,17,29,7],
+                "Mais de 1 a 2": [38,22,34,7],
+                "Mais de 2 a 5": [30,20,43,6],
+                "Mais de 5": [20,19,54,7]
+            }
+        },
+        "Eduardo Campos":  {
+            "Escolaridade": {
+                "Fundamental": [3,20,37,40],
+                "5ª a 8ª Série": [7,21,37,35],
+                "Ensino Médio": [4,24,39,33],
+                "Ensino Superior": [6,26,40,28]
+            },
+            "Região": {
+                "Brasil": [5,23,39,34],
+                "Nordeste": [8,23,33,36],
+                "Norte e Centro-Oeste": [4,23,29,44],
+                "Sudeste": [3,22,43,32],
+                "Sul": [3,24,45,28]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [3,20,33,44],
+                "Cidades de 20 a 100 mil": [5,25,41,28],
+                "Cidades com mais de 100 mil": [5,22,39,34]
+            },
+            "Renda (SM)": {
+                "Até 1": [7,18,39,36],
+                "Mais de 1 a 2": [6,22,35,37],
+                "Mais de 2 a 5": [3,25,39,32],
+                "Mais de 5": [4,23,45,27]
+            }
+        },
+        "Marina Silva":  {
+            "Escolaridade": {
+                "Fundamental": [6,32,38,24],
+                "5ª a 8ª Série": [8,37,37,18],
+                "Ensino Médio": [9,38,35,18],
+                "Ensino Superior": [12,41,34,13]
+            },
+            "Região": {
+                "Brasil": [9,37,36,19],
+                "Nordeste": [6,31,42,22],
+                "Norte e Centro-Oeste": [15,34,28,24],
+                "Sudeste": [7,43,34,16],
+                "Sul": [11,32,40,17]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [6,29,40,25],
+                "Cidades de 20 a 100 mil": [8,37,40,15],
+                "Cidades com mais de 100 mil": [9,39,33,19]
+            },
+            "Renda (SM)": {
+                "Até 1": [7,25,43,25],
+                "Mais de 1 a 2": [7,37,36,20],
+                "Mais de 2 a 5": [10,40,33,17],
+                "Mais de 5": [9,36,39,16]
+            }
+        }
+    }
 }
 }]
