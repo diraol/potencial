@@ -78,14 +78,16 @@ function limpar_candidato_de_um_lado(lado) {
     if (lado == "esquerda") {
         $("#cand-esq, #graf-cand-esq").fadeOut(200, function(){
             $("#cand-esq, #graf-cand-esq").empty()
-            .addClass("placeholder")
-            .fadeIn(400)});
+            .fadeIn(400);
+            $("#cand-esq").addClass("placeholder");
+        });
         filtro["esquerda"]["nome_cand"] = "";
     } else {
         $("#cand-dir, #graf-cand-dir").fadeOut(200, function(){
             $("#cand-dir, #graf-cand-dir").empty()
-            .addClass("placeholder")
-            .fadeIn(400)});
+            .fadeIn(400);
+            .$("#cand-dir").addClass("placeholder");
+        });
         filtro["direita"]["nome_cand"] = "";
     }
 }
