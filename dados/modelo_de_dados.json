@@ -1,116 +1,115 @@
 {
-    "p6": {
-        "name": "Pesquisa 6 - Abril/2014",
-        "date": "04/2014",
-        "data": {
-            "Aécio Neves": {
-                "Escolaridade": {
-                    "Fundamental": [],
-                    "5ª a 8ª Série": [],
-                    "Ensino Médio": [],
-                    "Ensino Superior": []
-                },
-                "Região": {
-                    "Brasil": [],
-                    "Nordeste": [],
-                    "Norte e Centro-Oeste": [],
-                    "Sudeste": [],
-                    "Sul": []
-                },
-                "Porte do Município (Habitantes)": {
-                    "Cidades com até 20 mil": [],
-                    "Cidades de 20 a 100 mil": [],
-                    "Cidades com mais de 100 mil": []
-                },
-                "Renda (SM)": {
-                    "Até 1": [],
-                    "Mais de 1 a 2": [],
-                    "Mais de 2 a 5": [],
-                    "Mais de 5 a 10": [],
-                    "Mais de 10": []
-                }
+"p6": {
+    "name": "Pesquisa 6 - Abril/2014",
+    "dias": "13 e 17",
+    "mes": "abril de 2014",
+    "entrevistas": "2002",
+    "municipios": "140",
+    "data": {
+        "Aécio Neves": {
+            "Escolaridade": {
+                "Fundamental": [],
+                "5ª a 8ª Série": [],
+                "Ensino Médio": [],
+                "Ensino Superior": []
             },
-            "Dilma Rousseff":  {
-                "Escolaridade": {
-                    "Fundamental": [],
-                    "5ª a 8ª Série": [],
-                    "Ensino Médio": [],
-                    "Ensino Superior": []
-                },
-                "Região": {
-                    "Brasil": [],
-                    "Nordeste": [],
-                    "Norte e Centro-Oeste": [],
-                    "Sudeste": [],
-                    "Sul": []
-                },
-                "Porte do Município (Habitantes)": {
-                    "Cidades com até 20 mil": [],
-                    "Cidades de 20 a 100 mil": [],
-                    "Cidades com mais de 100 mil": []
-                },
-                "Renda (SM)": {
-                    "Até 1": [],
-                    "Mais de 1 a 2": [],
-                    "Mais de 2 a 5": [],
-                    "Mais de 5 a 10": [],
-                    "Mais de 10": []
-                }
+            "Região": {
+                "Brasil": [],
+                "Nordeste": [],
+                "Norte e Centro-Oeste": [],
+                "Sudeste": [],
+                "Sul": []
             },
-            "Eduardo Campos":  {
-                "Escolaridade": {
-                    "Fundamental": [],
-                    "5ª a 8ª Série": [],
-                    "Ensino Médio": [],
-                    "Ensino Superior": []
-                },
-                "Região": {
-                    "Brasil": [],
-                    "Nordeste": [],
-                    "Norte e Centro-Oeste": [],
-                    "Sudeste": [],
-                    "Sul": []
-                },
-                "Porte do Município (Habitantes)": {
-                    "Cidades com até 20 mil": [],
-                    "Cidades de 20 a 100 mil": [],
-                    "Cidades com mais de 100 mil": []
-                },
-                "Renda (SM)": {
-                    "Até 1": [],
-                    "Mais de 1 a 2": [],
-                    "Mais de 2 a 5": [],
-                    "Mais de 5 a 10": [],
-                    "Mais de 10": []
-                }
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [],
+                "Cidades de 20 a 100 mil": [],
+                "Cidades com mais de 100 mil": []
             },
-            "Marina Silva":  {
-                "Escolaridade": {
-                    "Fundamental": [],
-                    "5ª a 8ª Série": [],
-                    "Ensino Médio": [],
-                    "Ensino Superior": []
-                },
-                "Região": {
-                    "Brasil": [],
-                    "Nordeste": [],
-                    "Norte e Centro-Oeste": [],
-                    "Sudeste": [],
-                    "Sul": []
-                },
-                "Porte do Município (Habitantes)": {
-                    "Cidades com até 20 mil": [],
-                    "Cidades de 20 a 100 mil": [],
-                    "Cidades com mais de 100 mil": []
-                },
-                "Renda (SM)": {
-                    "Até 1": [],
-                    "Mais de 1 a 2": [],
-                    "Mais de 2 a 5": [],
-                    "Mais de 5 a 10": [],
-                    "Mais de 10": []
-                }
+            "Renda (SM)": {
+                "Até 1": [],
+                "Mais de 1 a 2": [],
+                "Mais de 2 a 5": [],
+                "Mais de 5": []
+            }
+        },
+        "Dilma Rousseff":  {
+            "Escolaridade": {
+                "Fundamental": [],
+                "5ª a 8ª Série": [],
+                "Ensino Médio": [],
+                "Ensino Superior": []
+            },
+            "Região": {
+                "Brasil": [],
+                "Nordeste": [],
+                "Norte e Centro-Oeste": [],
+                "Sudeste": [],
+                "Sul": []
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [],
+                "Cidades de 20 a 100 mil": [],
+                "Cidades com mais de 100 mil": []
+            },
+            "Renda (SM)": {
+                "Até 1": [],
+                "Mais de 1 a 2": [],
+                "Mais de 2 a 5": [],
+                "Mais de 5": []
+            }
+        },
+        "Eduardo Campos":  {
+            "Escolaridade": {
+                "Fundamental": [],
+                "5ª a 8ª Série": [],
+                "Ensino Médio": [],
+                "Ensino Superior": []
+            },
+            "Região": {
+                "Brasil": [],
+                "Nordeste": [],
+                "Norte e Centro-Oeste": [],
+                "Sudeste": [],
+                "Sul": []
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [],
+                "Cidades de 20 a 100 mil": [],
+                "Cidades com mais de 100 mil": []
+            },
+            "Renda (SM)": {
+                "Até 1": [],
+                "Mais de 1 a 2": [],
+                "Mais de 2 a 5": [],
+                "Mais de 5": []
+            }
+        },
+        "Marina Silva":  {
+            "Escolaridade": {
+                "Fundamental": [],
+                "5ª a 8ª Série": [],
+                "Ensino Médio": [],
+                "Ensino Superior": []
+            },
+            "Região": {
+                "Brasil": [],
+                "Nordeste": [],
+                "Norte e Centro-Oeste": [],
+                "Sudeste": [],
+                "Sul": []
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [],
+                "Cidades de 20 a 100 mil": [],
+                "Cidades com mais de 100 mil": []
+            },
+            "Renda (SM)": {
+                "Até 1": [],
+                "Mais de 1 a 2": [],
+                "Mais de 2 a 5": [],
+                "Mais de 5": []
             }
         }
     }
+}
 }
