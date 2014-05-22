@@ -4,13 +4,13 @@
     var cores = ["#262659", "#265926", "#B88FA3", "#B8B88F"],
     filtro = {
         "esquerda": {
-            "pesquisa": "p5",
+            "pesquisa": "p7",
             "pergunta": "reg-br",
             "nome_cand": "",
             "container": "graf-cand-esq"
         },
         "direita": {
-            "pesquisa": "p5",
+            "pesquisa": "p7",
             "pergunta": "reg-br",
             "nome_cand": "",
             "container": "graf-cand-dir"
@@ -86,7 +86,7 @@ function limpar_candidato_de_um_lado(lado) {
         $("#cand-dir, #graf-cand-dir").fadeOut(200, function(){
             $("#cand-dir, #graf-cand-dir").empty()
             .fadeIn(400);
-            .$("#cand-dir").addClass("placeholder");
+            $("#cand-dir").addClass("placeholder");
         });
         filtro["direita"]["nome_cand"] = "";
     }
@@ -303,7 +303,6 @@ function geraGraficoCircular(chave_filtro) {
 
 function carrega_combos(){
     //Preenchendo o combo de pesquisas existentes
-    var ultima_pesquisa = ""
     for ( var pesquisa in mainData ){
         $('#selecao_pesquisa_esquerda').append(new Option(mainData.pesquisa.nome, pesquisa, true, true));
         $('#selecao_pesquisa_direita').append(new Option(mainData.pesquisa.nome, pesquisa, true, true));
@@ -314,12 +313,17 @@ function carrega_combos(){
 function first_load_on_html(){
     var esquerda = $("#selecao_pesquisa_esquerda"),
         direita = $("#selecao_pesquisa_direita"),
-        rodape = $("footer small:first");
+        rodape = $("footer small:first"),
+        ultima_pesquisa = "";
     $.each(mainData,function(index,value){
         esquerda.prepend($("<option>").attr('value',index).text(value.name));
         direita.prepend($("<option>").attr('value',index).text(value.name));
         rodape.prepend("Na pesquisa de " + value.mes + ", o Ibope entrevistou face a face " + value.entrevistas + " eleitores em " + value.municipios + " municípios de todas as regiões do Brasil entre os dias " + value.dias + " daquele mês.<br/>");
+        ultima_pesquisa = index;
     });
+    $('#selecao_pesquisa_esquerda option[value='+ultima_pesquisa+']').attr("selected","selected");
+    $('#selecao_pesquisa_direita option[value='+ultima_pesquisa+']').attr("selected","selected");
+    atualizar_fotos();
 }
 
 function preenche_rodape_pesqusias(){
