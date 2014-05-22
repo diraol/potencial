@@ -833,5 +833,92 @@
             }
         }
     }
+},
+"p7": {
+    "name": "Pesquisa 7 - Maio/2014",
+    "dias": "15 e 19",
+    "mes": "maio de 2014",
+    "entrevistas": "2002",
+    "municipios": "140",
+    "data": {
+        "Aécio Neves": {
+            "Escolaridade": {
+                "Fundamental": [11,22,35,32],
+                "5ª a 8ª Série": [11,22,39,28],
+                "Ensino Médio": [12,23,38,27],
+                "Ensino Superior": [20,25,36,20]
+            },
+            "Região": {
+                "Brasil": [13,23,37,27],
+                "Nordeste": [7,17,51,25],
+                "Norte e Centro-Oeste": [18,20,28,34],
+                "Sudeste": [15,26,33,26],
+                "Sul": [13,25,36,37]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [15,20,42,24],
+                "Cidades de 20 a 100 mil": [14,24,36,25],
+                "Cidades com mais de 100 mil": [12,23,36,29]
+            },
+            "Renda (SM)": {
+                "Até 1": [5,20,40,35],
+                "Mais de 1 a 2": [11,22,39,28],
+                "Mais de 2 a 5": [14,23,37,27],
+                "Mais de 5": [19,25,34,23]
+            }
+        },
+        "Dilma Rousseff":  {
+            "Escolaridade": {
+                "Fundamental": [38,21,32,10],
+                "5ª a 8ª Série": [27,18,43,11],
+                "Ensino Médio": [24,20,47,9],
+                "Ensino Superior": [22,17,53,8]
+            },
+            "Região": {
+                "Brasil": [28,19,43,10],
+                "Nordeste": [32,25,34,9],
+                "Norte e Centro-Oeste": [34,14,38,13],
+                "Sudeste": [23,17,51,9],
+                "Sul": [28,21,42,9]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [36,20,34,10],
+                "Cidades de 20 a 100 mil": [26,22,42,10],
+                "Cidades com mais de 100 mil": [26,18,47,9]
+            },
+            "Renda (SM)": {
+                "Até 1": [39,30,23,8],
+                "Mais de 1 a 2": [29,20,42,9],
+                "Mais de 2 a 5": [25,18,46,11],
+                "Mais de 5": [26,15,50,9]
+            }
+        },
+        "Eduardo Campos":  {
+            "Escolaridade": {
+                "Fundamental": [6,24,33,37],
+                "5ª a 8ª Série": [5,25,36,34],
+                "Ensino Médio": [9,26,34,31],
+                "Ensino Superior": [10,30,34,28]
+            },
+            "Região": {
+                "Brasil": [8,26,34,32],
+                "Nordeste": [12,22,37,29],
+                "Norte e Centro-Oeste": [10,26,26,38],
+                "Sudeste": [5,28,34,33],
+                "Sul": [6,28,35,30]
+            },
+            "Porte do Município (Habitantes)": {
+                "Cidades com até 20 mil": [10,24,33,32],
+                "Cidades de 20 a 100 mil": [8,28,32,32],
+                "Cidades com mais de 100 mil": [7,26,35,32]
+            },
+            "Renda (SM)": {
+                "Até 1": [8,27,30,35],
+                "Mais de 1 a 2": [5,24,36,35],
+                "Mais de 2 a 5": [8,25,36,32],
+                "Mais de 5": [9,32,31,27]
+            }
+        }
+    }
 }
 }]
