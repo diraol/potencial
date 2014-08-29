@@ -920,5 +920,13 @@
             }
         }
     }
+},
+"p8": {
+    "name": "Pesquisa 8 - Agosto/2014",
+    "dias": "23 e 25",
+    "mes": "agosto de 2014",
+    "entrevistas": "2506",
+    "municipios": "173",
+    "data": {"Aécio Neves": {"Escolaridade": {"5ª a 8ª Série": [10, 31, 35, 23], "Fundamental": [11, 29, 35, 24], "Ensino Superior": [20, 41, 27, 11], "Ensino Médio": [13, 36, 31, 19]}, "Renda (SM)": {"Até 1": [8, 25, 38, 28], "Mais de 2 a 5": [15, 36, 32, 18], "Mais de 1 a 2": [10, 37, 32, 22], "Mais de 5": [23, 38, 29, 9]}, "Porte do Município (Habitantes)": {"Cidades de 20 a 100 mil": [12, 34, 33, 20], "Cidades com até 20 mil": [17, 40, 33, 10], "Cidades com mais de 100 mil": [13, 34, 32, 21]}, "Região": {"Sul": [11, 47, 17, 24], "Nordeste": [6, 31, 41, 21], "Norte e Centro-Oeste": [12, 35, 39, 14], "Brasil": [13, 35, 32, 20], "Sudeste": [19, 32, 30, 19]}}, "Dilma Rousseff": {"Escolaridade": {"5ª a 8ª Série": [34, 22, 38, 6], "Fundamental": [44, 22, 29, 5], "Ensino Superior": [19, 24, 54, 3], "Ensino Médio": [24, 24, 48, 4]}, "Renda (SM)": {"Até 1": [41, 21, 32, 5], "Mais de 2 a 5": [27, 24, 44, 4], "Mais de 1 a 2": [32, 23, 40, 6], "Mais de 5": [23, 21, 54, 3]}, "Porte do Município (Habitantes)": {"Cidades de 20 a 100 mil": [39, 22, 36, 3], "Cidades com até 20 mil": [35, 24, 38, 3], "Cidades com mais de 100 mil": [23, 23, 48, 6]}, "Região": {"Sul": [25, 30, 39, 6], "Nordeste": [41, 20, 34, 4], "Norte e Centro-Oeste": [33, 20, 41, 5], "Brasil": [29, 23, 43, 5], "Sudeste": [23, 23, 50, 4]}}, "Marina Silva": {"Escolaridade": {"5ª a 8ª Série": [18, 43, 27, 12], "Fundamental": [15, 38, 31, 16], "Ensino Superior": [27, 47, 18, 8], "Ensino Médio": [25, 44, 22, 9]}, "Renda (SM)": {"Até 1": [17, 32, 34, 17], "Mais de 2 a 5": [24, 44, 23, 9], "Mais de 1 a 2": [21, 44, 24, 12], "Mais de 5": [24, 47, 22, 7]}, "Porte do Município (Habitantes)": {"Cidades de 20 a 100 mil": [21, 42, 26, 11], "Cidades com até 20 mil": [15, 51, 24, 10], "Cidades com mais de 100 mil": [23, 42, 24, 11]}, "Região": {"Sul": [16, 50, 19, 16], "Nordeste": [20, 37, 31, 12], "Norte e Centro-Oeste": [29, 34, 28, 10], "Brasil": [22, 43, 24, 11], "Sudeste": [22, 47, 21, 9]}}}
 }
 }]
