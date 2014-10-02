@@ -4,13 +4,13 @@
     var cores = ["#262659", "#265926", "#B88FA3", "#B8B88F"],
     filtro = {
         "esquerda": {
-            "pesquisa": "p11",
+            "pesquisa": "p12",
             "pergunta": "reg-br",
             "nome_cand": "",
             "container": "graf-cand-esq"
         },
         "direita": {
-            "pesquisa": "p11",
+            "pesquisa": "p12",
             "pergunta": "reg-br",
             "nome_cand": "",
             "container": "graf-cand-dir"
